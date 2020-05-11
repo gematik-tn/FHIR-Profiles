@@ -1,0 +1,56 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="594de19b-6426-457f-8c90-90b9e64ea582" />
+  <meta>
+    <lastUpdated value="2020-04-16T13:46:53.840+00:00" />
+  </meta>
+  <url value="https://example.org/fhir/StructureDefinition/AcceptDate" />
+  <version value="1.0.0" />
+  <name value="AcceptDate" />
+  <title value="Date of confirmation of the prescription" />
+  <status value="draft" />
+  <date value="2020-04-16T13:46:51.3380095+00:00" />
+  <description value="This extension should be used in the Task ressource. It stores the Date till when an insurance company will accept and pay the prescription." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Task" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension" />
+      <short value="Date when insurance company excepts the prescription." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://example.org/fhir/StructureDefinition/AcceptDate" />
+    </element>
+    <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

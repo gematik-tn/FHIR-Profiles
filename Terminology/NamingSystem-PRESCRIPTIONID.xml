@@ -1,0 +1,17 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <name value="NamingSystem-PRESCRIPTIONID" />
+  <status value="draft" />
+  <kind value="identifier" />
+  <date value="2020-04-30" />
+  <publisher value="gematik GmbH" />
+  <description value="The prescriptionID is an generated and not changeable sequence of numbers seperated by dots. The first three numbers define the type of the prescription. The next twelve numbers are the generated unique and consecutive sequence of the prescription. The last two digits are the check numbers according to ISO 7064." />
+  <usage value="The prescriptionID is the main identifier for an prescription. It is generedet by the 'E-Rezept Fachdienst' and is unique and not changeable." />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://gematik.de/fhir/NamingSystem/PRESCRIPTIONID" />
+    <preferred value="true" />
+    <period>
+      <start value="2021-01-01" />
+    </period>
+  </uniqueId>
+</NamingSystem>

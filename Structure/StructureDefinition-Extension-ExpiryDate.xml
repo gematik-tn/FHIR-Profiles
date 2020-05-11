@@ -1,0 +1,46 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="cff3d9c9-12a8-4d45-beb0-3edbd253e683" />
+  <meta>
+    <lastUpdated value="2020-04-16T13:47:34.040+00:00" />
+  </meta>
+  <url value="https://gematik.de/fhir/StructureDefinition/ExpiryDate" />
+  <version value="1.0.0" />
+  <name value="ExpiryDate" />
+  <title value="Presciption expiry date" />
+  <status value="draft" />
+  <date value="2020-04-16T13:47:31.7332567+00:00" />
+  <description value="This extension should be used in the Task ressource. It shows the presciption expiry date." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Task" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://gematik.de/fhir/StructureDefinition/ExpiryDate" />
+    </element>
+    <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

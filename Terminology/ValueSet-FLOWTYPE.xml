@@ -1,0 +1,60 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<url value="https://gematik.de/fhir/ValueSet/FLOWTYPE" />
+	<version value="1.0.0" />
+	<name value="ValueSet-FLOWTYPE" />
+	<status value="draft" />
+	<experimental value="false" />
+	<publisher value="gematik GmbH" />
+	<contact>
+		<telecom>
+			<system value="url" />
+			<value value="http://www.gematik.de" />
+		</telecom>
+	</contact>
+	<description value="Type of the prescription according to the 'Muster 16' forms" />
+	<compose>
+		<include>
+			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+		</include>
+	</compose>
+	<expansion>
+		<identifier value="fe7e0ee0-f72e-4909-bf48-7c84ff97bac5"/>
+		<timestamp value="2020-05-07T07:48:29+00:00"/>
+		<total value="7"/>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<code value="160"/>
+			<display value="Muster 16 (Apothekenpflichtige Arzneimittel)"/>
+		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<code value="161"/>
+			<display value="Muster 16 (Sanitätsbedarf)"/>
+		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<code value="162"/>
+			<display value="Muster 16 (Heilmittel)"/>
+		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<code value="163"/>
+			<display value="Muster 16 (Hilfsmittel)"/>
+		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<code value="164"/>
+			<display value="Muster 16 (Sprechstundenbedarf)"/>
+		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<code value="165"/>
+			<display value="Muster 16 (Betäubungsmittel)"/>
+		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<code value="166"/>
+			<display value="Muster 16 (T-Rezepte)"/>
+		</contains>
+	</expansion>
+</ValueSet>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="521848b0-29dd-40e0-9cb1-eee32de5348a" />
+  <meta>
+    <lastUpdated value="2020-04-16T13:43:30.128+00:00" />
+  </meta>
+  <url value="https://gematik.de/fhir/StructureDefinition/erxCommunication" />
+  <version value="1.0.0" />
+  <name value="Gem_erxCommunication" />
+  <title value="Communication between Patient and Provider" />
+  <status value="draft" />
+  <date value="2020-04-16T13:43:27.7930941+00:00" />
+  <description value="Ressource used for the communication between patient and pharmacist." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Communication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Communication.basedOn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.basedOn" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.basedOn.reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.basedOn.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.status" />
+      <fixedCode value="unknown" />
+    </element>
+    <element id="Communication.sent">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.sent" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.received">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.received" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.recipient">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.recipient" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.recipient.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.recipient.identifier" />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/baseTelematikID" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.sender">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.sender" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.sender.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.sender.identifier" />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/baseTelematikID" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Communication.payload">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.payload" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Communication.payload.content[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.payload.content[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medikament_PZN" />
+        <aggregation value="contained" />
+      </type>
+    </element>
+    <element id="Communication.payload.content[x]:contentReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.payload.content[x]" />
+      <sliceName value="contentReference" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Communication.payload.content[x]:contentString">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Communication.payload.content[x]" />
+      <sliceName value="contentString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

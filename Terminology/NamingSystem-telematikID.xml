@@ -1,0 +1,17 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <name value="tekematikID" />
+  <status value="draft" />
+  <kind value="identifier" />
+  <date value="2020-04-30" />
+  <publisher value="gematik GmbH" />
+  <description value="The telematikID is an unique identifier for all organizations in the directory service." />
+  <usage value="The attribute with this namingsystem identifies an organisation within the directory service." />
+  <uniqueId>
+    <type value="uri" />
+    <value value="https://gematik.de/fhir/Namingsystem/telematikID" />
+    <preferred value="true" />
+    <period>
+      <start value="2021-07-01" />
+    </period>
+  </uniqueId>
+</NamingSystem>

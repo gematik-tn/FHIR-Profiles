@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="8e46a4b1-767b-4e8b-9032-454c4e94f8b6" />
+  <meta>
+    <lastUpdated value="2020-04-16T13:42:23.761+00:00" />
+  </meta>
+  <url value="https://gematik.de/fhir/StructureDefinition/erxReceipt" />
+  <version value="1.0.0" />
+  <name value="Gem_erxReceipt" />
+  <title value="Document Bundle for Receipt" />
+  <status value="draft" />
+  <date value="2020-04-16T13:42:21.4495435+00:00" />
+  <description value="A document style representation of the receipt (complete, self-contained, signed)" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle" />
+      <constraint>
+        <key value="docBundle-1" />
+        <severity value="error" />
+        <human value="All referenced Resources must be contained in the Bundle" />
+        <expression value="Bundle.entry.descendants().reference.distinct().subsetOf(Bundle.entry.fullUrl)" />
+      </constraint>
+    </element>
+    <element id="Bundle.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.identifier:PrescriptionID">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.identifier" />
+      <sliceName value="PrescriptionID" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/erxPrescriptionID" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.type" />
+      <fixedCode value="document" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.timestamp">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.timestamp" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.entry" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="resource.type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry:Composition">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.entry" />
+      <sliceName value="Composition" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry:Composition.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/erxComposition" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
