@@ -75,10 +75,6 @@
       <path value="Composition.type.coding.display" />
       <fixedString value="Receipt" />
     </element>
-    <element id="Composition.subject">
-      <path value="Composition.subject" />
-      <short value="Reference to ePrescription (Bundle)" />
-    </element>
     <element id="Composition.date">
       <path value="Composition.date" />
       <mustSupport value="true" />
