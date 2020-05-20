@@ -1,7 +1,8 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <url value="https://gematik.de/fhir/CodeSystem/FLOWTYPE" />
+  <url value="https://gematik.de/fhir/CodeSystem/Flowtype" />
   <version value="1.0.0" />
-  <name value="FLOWTYPE" />
+  <name value="FlowtypeCS" />
+  <title value="CodeSystem of Flowtypes"/>
   <status value="draft" />
   <experimental value="false" />
   <publisher value="gematik GmbH" />

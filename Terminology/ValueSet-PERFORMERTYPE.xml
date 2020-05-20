@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<url value="https://gematik.de/fhir/ValueSet/PERFORMERTYPE" />
+	<url value="https://gematik.de/fhir/ValueSet/Performertype" />
 	<version value="1.0.0" />
-	<name value="ValueSet-PERFORMER" />
+	<name value="PerformertypeVS" />
+	<title value="ValueSet of DPerformertype Codes"/>
 	<status value="draft" />
 	<experimental value="false" />
 	<publisher value="gematik GmbH" />

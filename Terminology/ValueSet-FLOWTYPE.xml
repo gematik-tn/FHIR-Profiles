@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-	<url value="https://gematik.de/fhir/ValueSet/FLOWTYPE" />
+	<url value="https://gematik.de/fhir/ValueSet/Flowtype" />
 	<version value="1.0.0" />
-	<name value="ValueSet-FLOWTYPE" />
+	<name value="FlowtypeVS" />
+	<title value="ValueSet of Flowtype Codes"/>
 	<status value="draft" />
 	<experimental value="false" />
 	<publisher value="gematik GmbH" />
