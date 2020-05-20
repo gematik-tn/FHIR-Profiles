@@ -134,12 +134,5 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Composition.section">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Section" />
-      </extension>
-      <path value="Composition.section" />
-      <mustSupport value="true" />
-    </element>
   </differential>
 </StructureDefinition>
