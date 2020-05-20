@@ -104,16 +104,19 @@
       <path value="Composition.event" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.event.period">
       <path value="Composition.event.period" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.event.period.start">
       <path value="Composition.event.period.start" />
       <short value="Starting time of dispensation" />
       <definition value="Time the prescription was submitted to the dispensing organization" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.event.detail">
       <path value="Composition.event.detail" />
@@ -124,10 +127,12 @@
         <code value="Reference" />
         <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxMedicationDispense" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Composition.event.detail.reference">
       <path value="Composition.event.detail.reference" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
