@@ -43,69 +43,33 @@
   <derivation value="constraint" />
   <differential>
     <element id="Composition.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.status" />
       <short value="Status = &quot;final&quot;" />
       <fixedCode value="final" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type" />
       <short value="Document Type = &quot;Receipt&quot;" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.type.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding.system" />
       <min value="1" />
       <fixedUri value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
     </element>
     <element id="Composition.type.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding.code" />
       <min value="1" />
       <fixedCode value="3" />
     </element>
     <element id="Composition.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -113,12 +77,6 @@
       <fixedString value="Receipt" />
     </element>
     <element id="Composition.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.subject" />
       <short value="Reference to ePrescription (Bundle)" />
       <min value="1" />
@@ -131,22 +89,10 @@
       <mustSupport value="true" />
     </element>
     <element id="Composition.date">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.date" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.author">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.author" />
       <short value="Reference to verifying service (Device)" />
       <type>
@@ -158,24 +104,12 @@
       <mustSupport value="true" />
     </element>
     <element id="Composition.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.title" />
       <short value="Document title = &quot;Quittung&quot;" />
       <fixedString value="Quittung" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
@@ -191,12 +125,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:Prozess">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
@@ -207,24 +135,12 @@
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:Prozess.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.title" />
       <short value="Title = &quot;Prozess&quot;" />
       <min value="1" />
       <fixedString value="Prozess" />
     </element>
     <element id="Composition.section:Prozess.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.entry" />
       <short value="Verweis auf Prozess (Task)" />
       <min value="1" />
@@ -237,22 +153,10 @@
       </type>
     </element>
     <element id="Composition.section:Prozess.entry.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
     <element id="Composition.section:Verordnungsdatensatz">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
@@ -263,24 +167,12 @@
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:Verordnungsdatensatz.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.title" />
       <short value="Title = &quot;Verordnungsdatensatz&quot;" />
       <min value="1" />
       <fixedString value="Verordnungsdatensatz" />
     </element>
     <element id="Composition.section:Verordnungsdatensatz.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.entry" />
       <short value="Verweis auf Verordnungsdatensatz (Bundle)" />
       <min value="1" />

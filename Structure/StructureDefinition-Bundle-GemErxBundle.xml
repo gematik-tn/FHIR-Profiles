@@ -45,15 +45,10 @@
         <severity value="error" />
         <human value="All referenced Resources must be contained in the Bundle" />
         <expression value="Bundle.entry.descendants().reference.distinct().subsetOf(Bundle.entry.fullUrl)" />
+        <source value="https://gematik.de/fhir/StructureDefinition/erxReceipt" />
       </constraint>
     </element>
     <element id="Bundle.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.identifier" />
       <slicing>
         <discriminator>
@@ -65,16 +60,9 @@
       <mustSupport value="true" />
     </element>
     <element id="Bundle.identifier:PrescriptionID">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.identifier" />
       <sliceName value="PrescriptionID" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Identifier" />
         <profile value="https://gematik.de/fhir/StructureDefinition/erxPrescriptionID" />
@@ -82,34 +70,16 @@
       <mustSupport value="true" />
     </element>
     <element id="Bundle.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.type" />
       <fixedCode value="document" />
       <mustSupport value="true" />
     </element>
     <element id="Bundle.timestamp">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.timestamp" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Bundle.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
@@ -121,12 +91,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Bundle.entry:Composition">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="Composition" />
       <min value="1" />
