@@ -12,7 +12,7 @@
       <value value="http://www.gematik.de" />
     </telecom>
   </contact>
-  <description value="Type of the prescription according to the 'Muster 16' forms" />
+  <description value="Type of the prescription according to the 'Muster 16' forms." />
   <copyright value="gematik GmbH" />
   <caseSensitive value="true" />
   <content value="complete" />

@@ -12,7 +12,7 @@
       <value value="http://www.gematik.de" />
     </telecom>
   </contact>
-  <description value="Type of document depending on the recipient of the Bundle" />
+  <description value="Type of document depending on the recipient of the Bundle." />
   <copyright value="gematik GmbH" />
   <caseSensitive value="true" />
   <content value="complete" />
