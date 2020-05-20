@@ -1,0 +1,40 @@
+{
+    "resourceType": "OperationDefinition",
+    "url": "http://gematik.de/fhir/StructureDefinition/ActivateOperationDefinition",
+    "version": "V1.0",
+    "name": " Activate Operation ",
+    "status": "draft",
+    "kind": "operation",
+    "date": "2020-07-01",
+    "description": "This operation activates the created Task for the prescription. The httpo-RequestBody of the operation must contain the qes signed Bundle of the prescription. The prescription server updates the task ressource and creates a signature. The insurent gets access to this dataset.", 
+    "code": "activate",
+    "resource": "Task",
+    "system": false,
+    "type": true,
+    "instance": true,
+    "parameter": [ {
+      "name": "KBVBundle",
+      "use": "in",        
+      "min": "1",
+      "max": "1",
+      "documentation": "The Task needs the signed KBV Bundle as a input to be activated.",
+      "type": "code",
+      "binding":[{
+        "strength": "required",
+        "valueSet": "https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE",
+        "value": "1"
+      }]
+    },{
+      "name": "signed Task",
+      "use": "out",        
+      "min": "1",
+      "max": "1",
+      "documentation": "The activated Task gets an signature and should be displayed.",
+      "type": "code",
+      "binding":[{
+        "strength": "required",
+        "valueSet": "https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE",
+        "value": "2"
+      }]
+    } ]
+  }
