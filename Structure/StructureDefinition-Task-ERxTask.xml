@@ -49,12 +49,6 @@
       </slicing>
     </element>
     <element id="Task.extension:acceptDate">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.extension" />
       <sliceName value="acceptDate" />
       <short value="Accept Date of the prescription" />
@@ -67,12 +61,6 @@
       </type>
     </element>
     <element id="Task.extension:expiryDate">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.extension" />
       <sliceName value="expiryDate" />
       <short value="Expiry Date of the Prescription" />
@@ -85,12 +73,6 @@
       </type>
     </element>
     <element id="Task.extension:flowType">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.extension" />
       <sliceName value="flowType" />
       <short value="Type of the prescription" />
@@ -103,12 +85,6 @@
       </type>
     </element>
     <element id="Task.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.identifier" />
       <slicing>
         <discriminator>
@@ -120,12 +96,6 @@
       </slicing>
     </element>
     <element id="Task.identifier:PrescriptionID">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.identifier" />
       <sliceName value="PrescriptionID" />
       <short value="Prescription Identifier" />
@@ -137,12 +107,6 @@
       </type>
     </element>
     <element id="Task.identifier:AccessCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.identifier" />
       <sliceName value="AccessCode" />
       <short value="AccessCode Identifier" />
@@ -150,77 +114,35 @@
       <max value="1" />
     </element>
     <element id="Task.identifier:AccessCode.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.identifier.system" />
-      <fixedUri value="https://gematik.de/fhir/Namingsystem/accessCode" />
+      <fixedUri value="https://gematik.de/fhir/Namingsystem/AccessCode" />
     </element>
     <element id="Task.identifier:Secret">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.identifier" />
       <sliceName value="Secret" />
       <short value="Secret" />
       <max value="1" />
     </element>
     <element id="Task.identifier:Secret.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.identifier.system" />
-      <fixedUri value="https://gematik.de/fhir/Namingsystem/secret" />
+      <fixedUri value="https://gematik.de/fhir/Namingsystem/Secret" />
     </element>
     <element id="Task.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.status" />
       <mustSupport value="true" />
     </element>
     <element id="Task.intent">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.intent" />
       <fixedCode value="order" />
       <mustSupport value="true" />
     </element>
     <element id="Task.for">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.for" />
       <short value="Identifier of Patient (KVID)" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.for.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.for.identifier" />
       <min value="1" />
       <type>
@@ -230,34 +152,16 @@
       <mustSupport value="true" />
     </element>
     <element id="Task.authoredOn">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.authoredOn" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.lastModified">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.lastModified" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.performerType">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.performerType" />
       <definition value="The Institution in which the patient should redeem his prescription." />
       <min value="1" />
@@ -271,22 +175,10 @@
       </binding>
     </element>
     <element id="Task.performerType.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.performerType.coding" />
       <mustSupport value="true" />
     </element>
     <element id="Task.input">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Parameter" />
       </extension>
@@ -304,12 +196,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Task.input:ePrescription">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Parameter" />
       </extension>
@@ -318,12 +204,6 @@
       <max value="1" />
     </element>
     <element id="Task.input:ePrescription.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.type" />
       <mustSupport value="true" />
       <binding>
@@ -335,24 +215,12 @@
       </binding>
     </element>
     <element id="Task.input:ePrescription.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.type.coding" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.input:ePrescription.type.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.type.coding.system" />
       <code>
         <system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
@@ -361,23 +229,11 @@
       <min value="1" />
     </element>
     <element id="Task.input:ePrescription.type.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.type.coding.code" />
       <min value="1" />
       <fixedCode value="1" />
     </element>
     <element id="Task.input:ePrescription.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.value[x]" />
       <type>
         <code value="Reference" />
@@ -388,33 +244,15 @@
       <mustSupport value="true" />
     </element>
     <element id="Task.input:ePrescription.value[x].reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.value[x].reference" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.input:ePrescription.value[x].identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.value[x].identifier" />
       <mustSupport value="false" />
     </element>
     <element id="Task.input:patientReceipt">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Parameter" />
       </extension>
@@ -423,12 +261,6 @@
       <max value="1" />
     </element>
     <element id="Task.input:patientReceipt.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.type" />
       <mustSupport value="true" />
       <binding>
@@ -440,24 +272,12 @@
       </binding>
     </element>
     <element id="Task.input:patientReceipt.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.type.coding" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.input:patientReceipt.type.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.type.coding.system" />
       <code>
         <system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
@@ -466,60 +286,30 @@
       <min value="1" />
     </element>
     <element id="Task.input:patientReceipt.type.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.type.coding.code" />
       <min value="1" />
       <fixedCode value="2" />
     </element>
     <element id="Task.input:patientReceipt.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxReceipt" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="Task.input:patientReceipt.value[x].reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.value[x].reference" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.input:patientReceipt.value[x].identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.input.value[x].identifier" />
       <mustSupport value="false" />
     </element>
     <element id="Task.output">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.output" />
       <code>
         <system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE" />
@@ -538,23 +328,11 @@
       <mustSupport value="true" />
     </element>
     <element id="Task.output:receipt">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.output" />
       <sliceName value="receipt" />
       <max value="1" />
     </element>
     <element id="Task.output:receipt.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.output.type" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -565,46 +343,22 @@
       </binding>
     </element>
     <element id="Task.output:receipt.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.output.type.coding" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.output:receipt.type.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.output.type.coding.system" />
       <min value="1" />
       <fixedUri value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
     </element>
     <element id="Task.output:receipt.type.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.output.type.coding.code" />
       <min value="1" />
       <fixedCode value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
     </element>
     <element id="Task.output:receipt.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.output.value[x]" />
       <type>
         <code value="Reference" />
@@ -615,12 +369,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Task.output:receipt.value[x].reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Task.output.value[x].reference" />
       <min value="1" />
       <mustSupport value="true" />

@@ -43,12 +43,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="MedicationDispense.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.identifier" />
       <slicing>
         <discriminator>
@@ -60,12 +54,6 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.identifier:PrescriptionID">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.identifier" />
       <sliceName value="PrescriptionID" />
       <min value="1" />
@@ -77,24 +65,12 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.status" />
       <short value="completed" />
       <fixedCode value="completed" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.medication[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.medication[x]" />
       <type>
         <code value="Reference" />
@@ -105,34 +81,16 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.medication[x].reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.medication[x].reference" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.subject" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.subject.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.subject.identifier" />
       <min value="1" />
       <type>
@@ -142,46 +100,46 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.performer">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.performer" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationDispense.whenPrepared">
+    <element id="MedicationDispense.performer.actor.identifier">
+      <path value="MedicationDispense.performer.actor.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationDispense.performer.actor.identifier:TelematikID">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="MedicationDispense.whenPrepared" />
+      <path value="MedicationDispense.performer.actor.identifier" />
+      <sliceName value="TelematikID" />
       <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/baseTelematikID" />
+      </type>
+    </element>
+    <element id="MedicationDispense.whenPrepared">
+      <path value="MedicationDispense.whenPrepared" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.whenHandedOver">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.whenHandedOver" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="trial-use" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.dosageInstruction" />
       <mustSupport value="true" />
     </element>
