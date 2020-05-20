@@ -33,11 +33,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Communication.basedOn.reference">
-      <path value="Communication.basedOn.reference" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Communication.status">
       <path value="Communication.status" />
       <fixedCode value="unknown" />
