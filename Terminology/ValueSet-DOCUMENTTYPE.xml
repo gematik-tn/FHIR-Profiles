@@ -2,6 +2,7 @@
 	<url value="https://gematik.de/fhir/ValueSet/Documenttype" />
 	<version value="1.0.0" />
 	<name value="DocumenttypeVS" />
+	<title value="ValueSet of Documenttype Codes"/>
 	<status value="draft" />
 	<experimental value="false" />
 	<publisher value="gematik GmbH" />
@@ -11,7 +12,7 @@
 			<value value="http://www.gematik.de" />
 		</telecom>
 	</contact>
-	<description value="Type of document depending on the recipient" />
+	<description value="Type of document depending on the recipient." />
 	<compose>
 		<include>
 			<system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE"/>
