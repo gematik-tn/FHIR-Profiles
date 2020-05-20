@@ -1,0 +1,27 @@
+{
+  "resourceType": "OperationDefinition",
+  "url": "http://gematik.de/fhir/OperationDefinition/CreateOperationDefinition",
+  "version": "1.0.0",
+  "name": " CreateTask",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2020-03-26",
+  "description": "This operation creates a Task for the prescription and starts the workflow. The operation defines one input parameter which gives information about the prescirption Type.", 
+  "code": "create",
+  "resource": "Task",
+  "system": false,
+  "type": true,
+  "instance": true,
+  "parameter": [ {
+    "name": "workflowType",
+    "use": "in",        
+    "min": "1",
+    "max": "1",
+    "documentation": "This parameter defines the type of a prescription.",
+    "type": "code",
+    "binding":[{
+      "strength": "required",
+      "valueSet": "https://gematik.de/fhir/CodeSystem/FLOWTYPE"
+    }]
+  } ]
+}
