@@ -31,20 +31,22 @@
       <fixedUri value="https://gematik.de/fhir/StructureDefinition/PrescriptionType" />
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <type>
         <code value="Coding" />
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://gematik.de/fhir/ValueSet/FLOWTYPE" />
+        <valueSet value="https://gematik.de/fhir/ValueSet/Flowtype" />
       </binding>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x].code">
+      <path value="Extension.value[x].code" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

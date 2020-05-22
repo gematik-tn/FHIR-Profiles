@@ -48,12 +48,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="AuditEvent.type.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.type.system" />
       <code>
         <system value="http://terminology.hl7.org/CodeSystem/audit-event-type" />
@@ -63,53 +57,23 @@
       <fixedUri value="http://terminology.hl7.org/CodeSystem/audit-event-type" />
     </element>
     <element id="AuditEvent.type.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.type.code" />
       <min value="1" />
       <fixedCode value="rest" />
     </element>
     <element id="AuditEvent.action">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.action" />
       <min value="1" />
     </element>
     <element id="AuditEvent.outcome">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.outcome" />
       <min value="1" />
     </element>
     <element id="AuditEvent.agent.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.agent.type" />
       <min value="1" />
     </element>
     <element id="AuditEvent.agent.who.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.agent.who.identifier" />
       <min value="1" />
       <type>
@@ -119,32 +83,14 @@
       </type>
     </element>
     <element id="AuditEvent.agent.name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.agent.name" />
       <min value="1" />
     </element>
     <element id="AuditEvent.source.site">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.source.site" />
       <fixedString value="E-Rezept Fachdienst" />
     </element>
     <element id="AuditEvent.source.observer">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.source.observer" />
       <type>
         <code value="Reference" />
@@ -152,33 +98,15 @@
       </type>
     </element>
     <element id="AuditEvent.source.observer.reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.source.observer.reference" />
       <min value="1" />
     </element>
     <element id="AuditEvent.entity">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.entity" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="AuditEvent.entity.what">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.entity.what" />
       <min value="1" />
       <type>
@@ -190,12 +118,6 @@
       </type>
     </element>
     <element id="AuditEvent.entity.name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="AuditEvent.entity.name" />
       <min value="1" />
     </element>

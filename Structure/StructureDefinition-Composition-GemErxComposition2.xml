@@ -61,7 +61,7 @@
     <element id="Composition.type.coding.system">
       <path value="Composition.type.coding.system" />
       <min value="1" />
-      <fixedUri value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
+      <fixedUri value="https://gematik.de/fhir/CodeSystem/Documenttype" />
     </element>
     <element id="Composition.type.coding.code">
       <path value="Composition.type.coding.code" />
