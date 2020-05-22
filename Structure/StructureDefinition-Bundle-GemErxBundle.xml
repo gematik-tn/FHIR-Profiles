@@ -83,8 +83,8 @@
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
-          <type value="type" />
-          <path value="resource" />
+          <type value="value" />
+          <path value="resource.type.coding.code" />
         </discriminator>
         <rules value="open" />
       </slicing>
