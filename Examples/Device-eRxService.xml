@@ -7,4 +7,7 @@
 	<id value="eRxService" />
 	<status value="active" />
 	<serialNumber value="R4.0.0.287342834" />
+	<deviceName>
+		<name value="Fachdienst eRezept"/>
+	</deviceName>
 </Device>
