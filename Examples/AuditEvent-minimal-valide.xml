@@ -1,0 +1,36 @@
+<AuditEvent xmlns="http://hl7.org/fhir">
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-05-22T07:32:21.658+00:00" />
+    <profile value="https://gematik.de/fhir/StructureDefinition/eRxAuditEvent" />
+  </meta>
+  <type>
+    <system value="http://terminology.hl7.org/CodeSystem/audit-event-type" />
+    <code value="rest" />
+  </type>
+  <action value="C" />
+  <recorded value="2020-02-27T08:04:27.434+00:00" />
+  <outcome value="0" />
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/extra-security-role-type" />
+        <code value="humanuser" />
+        <display value="human user" />
+      </coding>
+    </type>
+    <name value="Praxis Dr. Müller" />
+    <requestor value="false" />
+  </agent>
+  <source>
+    <observer>
+      <reference value="Device/eRx-Fachdienst" />
+    </observer>
+  </source>
+  <entity>
+    <what>
+      <reference value="Task/4711" />
+    </what>
+    <name value="X123456789" />
+  </entity>
+</AuditEvent>

@@ -1,0 +1,25 @@
+<Communication xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="https://gematik.de/fhir/StructureDefinition/ErxCommunication" />
+		<tag>
+			<display value="Valides Beispiel mit Minimaldaten. Payload: string"/>
+		</tag>
+    </meta>
+    <status value="unknown" />
+    <sent value="2020-03-12T18:01:10+00:00" />
+    <recipient>
+        <identifier>
+            <system value="https://gematik.de/fhir/Namingsystem/TelematikID" />
+            <value value="606358757" />
+        </identifier>
+    </recipient>
+    <sender>
+        <identifier>
+            <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+            <value value="X234567890" />
+        </identifier>
+    </sender>
+    <payload>
+        <contentString value="Hallo, ich wollte gern fragen, ob das Medikament XY bei Ihnen vorrätig ist." />
+    </payload>
+</Communication>
