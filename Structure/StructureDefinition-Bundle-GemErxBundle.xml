@@ -52,8 +52,8 @@
       <path value="Bundle.identifier" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
+          <type value="value" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -83,8 +83,8 @@
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="resource.type" />
+          <type value="type" />
+          <path value="resource" />
         </discriminator>
         <rules value="open" />
       </slicing>
