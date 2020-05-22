@@ -3,7 +3,7 @@
 		<profile value="https://gematik.de/fhir/StructureDefinition/ErxReceipt" />
 		<tag>
 			<display value="Valid example reciept with minimal data, all references bundled." />
-		</tag>
+		</tag>   
 	</meta>
 	<identifier>
 		<system value="https://gematik.de/fhir/NamingSystem/PrescriptionID" />
