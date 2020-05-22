@@ -221,7 +221,7 @@
           <valueString value="TaskInputParameterType" />
         </extension>
         <strength value="required" />
-        <valueSet value="https://gematik.de/fhir/ValueSet/DOCUMENTTYPE" />
+        <valueSet value="https://gematik.de/fhir/ValueSet/Documenttype" />
       </binding>
     </element>
     <element id="Task.input:ePrescription.type.coding">
