@@ -15,7 +15,7 @@
 	<description value="Type of document depending on the recipient." />
 	<compose>
 		<include>
-			<system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Documenttype"/>
 		</include>
 	</compose>
 	<expansion>
@@ -23,17 +23,17 @@
 		<timestamp value="2020-05-07T07:48:29+00:00"/>
 		<total value="3"/>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Documenttype"/>
 			<code value="1"/> 
 			<display value="Health Care Provider Prescription"/>
 		</contains>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Documenttype"/>
 			<code value="2"/> 
 			<display value="Patient Confirmation"/>
 		</contains>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Documenttype"/>
 			<code value="3"/> 
 			<display value="Receipt"/>
 		</contains>

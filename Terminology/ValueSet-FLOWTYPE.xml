@@ -15,7 +15,7 @@
 	<description value="Type of the prescription according to the 'Muster 16' forms " />
 	<compose>
 		<include>
-			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
 		</include>
 	</compose>
 	<expansion>
@@ -23,37 +23,37 @@
 		<timestamp value="2020-05-07T07:48:29+00:00"/>
 		<total value="7"/>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
 			<code value="160"/>
 			<display value="Muster 16 (Apothekenpflichtige Arzneimittel)"/>
 		</contains>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
 			<code value="161"/>
 			<display value="Muster 16 (Sanitätsbedarf)"/>
 		</contains>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
 			<code value="162"/>
 			<display value="Muster 16 (Heilmittel)"/>
 		</contains>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
 			<code value="163"/>
 			<display value="Muster 16 (Hilfsmittel)"/>
 		</contains>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
 			<code value="164"/>
 			<display value="Muster 16 (Sprechstundenbedarf)"/>
 		</contains>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
 			<code value="165"/>
 			<display value="Muster 16 (Betäubungsmittel)"/>
 		</contains>
 		<contains>
-			<system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE"/>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
 			<code value="166"/>
 			<display value="Muster 16 (T-Rezepte)"/>
 		</contains>
