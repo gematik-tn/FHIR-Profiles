@@ -27,6 +27,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <max value="1" />
       <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">

@@ -104,5 +104,31 @@
         <profile value="https://gematik.de/fhir/StructureDefinition/erxComposition" />
       </type>
     </element>
+    <element id="Bundle.signature">
+      <path value="Bundle.signature" />
+      <min value="1" />
+      <type>
+        <code value="Signature" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/erxSignature" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.signature.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Bundle.signature.type" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>
