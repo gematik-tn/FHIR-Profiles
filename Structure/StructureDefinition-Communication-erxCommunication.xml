@@ -114,45 +114,31 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Communication.payload.content[x]">
-      <path value="Communication.payload.content[x]" />
+    <element id="Communication.payload.extension">
+      <path value="Communication.payload.extension" />
       <slicing>
         <discriminator>
-          <type value="type" />
-          <path value="$this" />
+          <type value="value" />
+          <path value="url" />
         </discriminator>
+        <rules value="open" />
       </slicing>
+    </element>
+    <element id="Communication.payload.extension:InsuranceProvider">
+      <path value="Communication.payload.extension" />
+      <sliceName value="InsuranceProvider" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/InsuranceProvider" />
+      </type>
+    </element>
+    <element id="Communication.payload.content[x]">
+      <path value="Communication.payload.content[x]" />
       <type>
         <code value="string" />
       </type>
-      <type>
-        <code value="Reference" />
-      </type>
-    </element>
-    <element id="Communication.payload.content[x]:contentReference">
-      <path value="Communication.payload.contentReference" />
-      <sliceName value="contentReference" />
-      <type>
-        <code value="Reference" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Communication.payload.content[x]:contentReference.identifier">
-      <path value="Communication.payload.contentReference.identifier" />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-iknr" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Communication.payload.content[x]:contentString">
-      <path value="Communication.payload.contentString" />
-      <sliceName value="contentString" />
-      <type>
-        <code value="string" />
-      </type>
-      <maxLength value="10000" />
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
