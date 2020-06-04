@@ -111,7 +111,6 @@
     </element>
     <element id="Communication.payload">
       <path value="Communication.payload" />
-      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -128,8 +127,6 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medikament_PZN" />
-        <aggregation value="contained" />
       </type>
     </element>
     <element id="Communication.payload.content[x]:contentReference">
