@@ -2,7 +2,7 @@
   "resourceType": "OperationDefinition",
   "url": "http://gematik.de/fhir/OperationDefinition/CreateOperationDefinition",
   "version": "1.0.0",
-  "name": " CreateTask",
+  "name": " Create Operation",
   "status": "draft",
   "kind": "operation",
   "date": "2020-03-26",
