@@ -10,7 +10,7 @@
   "code": "create",
   "resource": "Task",
   "system": false,
-  "type": true,
+  "type": false,
   "instance": true,
   "parameter": [ {
     "name": "workflowType",

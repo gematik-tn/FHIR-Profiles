@@ -1,0 +1,31 @@
+{
+    "resourceType": "OperationDefinition",
+    "url": "http://gematik.de/fhir/StructureDefinition/CloseOperationDefinition",
+    "version": "V1.0",
+    "name": " Close Operation ",
+    "status": "draft",
+    "kind": "operation",
+    "date": "2020-07-01",
+    "description": "The operation $close finishes the e-prescription workflow and creates a receipt. The Output of this operation is a Bundle, which is storedy by the prescription server in Task.output. The status of the Task then changes into 'completed'", 
+    "code": "close",
+    "resource": "Task",
+    "system": false,
+    "type": false,
+    "instance": true,
+    "outputProfile":"https://gematik.de/fhir/StructureDefinition/erxReceipt",
+    "parameter": [ {
+      "name": "secret",
+      "use": "in",        
+      "min": "1",
+      "max": "1",
+      "documentation": "The Operation gets as input the secret Parameter inside of the URL. This paramter must be equal to the value stored in Task.identifier:Secret. Otherwise the Operation aborts with an error.",
+      "type": "string"
+    },{
+      "name": "Receipt",
+      "use": "out",        
+      "min": "1",
+      "max": "1",
+      "documentation": "The receipt Bundle contains the MedicationDispense resource and the signature. ",
+      "type": "Bundle"
+    } ]
+  }
