@@ -6,10 +6,10 @@
   <url value="https://gematik.de/fhir/StructureDefinition/erxCommunicationDispReq" />
   <version value="1.0.0" />
   <name value="Gem_erxCommunicationDispReq" />
-  <title value="Communication between Patient and Provider" />
+  <title value="Request for Dispense of ePrescription" />
   <status value="draft" />
   <date value="2020-04-16T13:43:27.7930941+00:00" />
-  <description value="Ressource used for the communication between patient and pharmacist." />
+  <description value="Ressource used for the communication of dispense request between patient/representative and provider based on ePrescription" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

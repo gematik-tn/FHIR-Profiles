@@ -6,10 +6,10 @@
   <url value="https://gematik.de/fhir/StructureDefinition/erxCommunicationInfoReq" />
   <version value="1.0.0" />
   <name value="Gem_erxCommunicationInfoReq" />
-  <title value="Communication between Patient and Provider" />
+  <title value="Informative request from Patient to Provider" />
   <status value="draft" />
   <date value="2020-04-16T13:43:27.7930941+00:00" />
-  <description value="Ressource used for the communication between patient and pharmacist." />
+  <description value="Ressource used for the communication of informative requests between patient and provider." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
