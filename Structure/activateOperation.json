@@ -10,7 +10,8 @@
   "code": "activate",
   "resource": "Task",
   "system": false,
-  "type": true,
+  "type": false
+  ,
   "instance": true,
   "inputProfile": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle", 
   "outputProfile": "https://gematik.de/fhir/StructureDefinition/erxTask",

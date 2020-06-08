@@ -1,0 +1,23 @@
+{
+    "resourceType": "OperationDefinition",
+    "url": "http://gematik.de/fhir/StructureDefinition/RejectOperationDefinition",
+    "version": "V1.0",
+    "name": " Reject Operation ",
+    "status": "draft",
+    "kind": "operation",
+    "date": "2020-07-01",
+    "description": "Rejects the dispense of the medication. After the rejection of the e-prescription the prescription server has to delete the value stored in Task.identifier:Secret and to change the status in Task.status into 'ready'. Then the e-prescription can be retrieved from another pharmacy or it can be deleted by the patient. ", 
+    "code": "reject",
+    "resource": "Task",
+    "system": false,
+    "type": false,
+    "instance": true,
+    "parameter": [ {
+      "name": "secret",
+      "use": "in",        
+      "min": "1",
+      "max": "1",
+      "documentation": "The Operation gets as input the secret Parameter inside of the URL. This paramter must be equal to the value stored in Task.identifier:Secret. Otherwise the Operation aborts with an error.",
+      "type": "string"
+    }]
+  }
