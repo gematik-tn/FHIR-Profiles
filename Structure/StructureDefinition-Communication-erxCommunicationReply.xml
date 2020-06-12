@@ -70,7 +70,6 @@
     </element>
     <element id="Communication.sent">
       <path value="Communication.sent" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Communication.received">
