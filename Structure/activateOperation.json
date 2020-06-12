@@ -6,29 +6,27 @@
   "status": "draft",
   "kind": "operation",
   "date": "2020-07-01",
-  "description": "This operation activates the created Task for the prescription. The httpo-RequestBody of the operation must contain the qes signed Bundle of the prescription. The prescription server updates the task ressource and creates a signature. The insurent gets access to this dataset.", 
+  "description": "This operation activates the created Task for the prescription. The input parameter must contain the qualified signed Bundle of the prescription. The prescription server validates the prescription, updates the task ressource and starts the workflow.", 
   "code": "activate",
   "resource": "Task",
   "system": false,
-  "type": false
-  ,
+  "type": false  ,
   "instance": true,
-  "inputProfile": "https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Bundle", 
   "outputProfile": "https://gematik.de/fhir/StructureDefinition/erxTask",
   "parameter": [ {
-    "name": "KBVBundle",
+    "name": "ePrescription",
     "use": "in",        
     "min": "1",
     "max": "1",
-    "documentation": "The Task needs the signed KBV Bundle as a input to be activated.",
-    "type": "Bundle"
+    "documentation": "The qualified signed prescription element to activate the ePrescription workflow.",
+    "type": "base64Binary"
     
   },{
-    "name": "signed Task",
+    "name": "updated Task",
     "use": "out",        
     "min": "1",
     "max": "1",
-    "documentation": "The activated Task gets an signature and should be displayed.",
+    "documentation": "The activated Task.",
     "type": "Task"
   } ]
 }
