@@ -4,7 +4,7 @@
 *.xsd
 definitions.xml/
 utilized_extensions/
-
+old/
 
 ### Eclipse template
 

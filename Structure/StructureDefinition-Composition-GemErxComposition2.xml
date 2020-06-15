@@ -3,8 +3,8 @@
   <meta>
     <lastUpdated value="2020-04-16T13:43:58.4+00:00" />
   </meta>
-  <url value="https://gematik.de/fhir/StructureDefinition/erxComposition2" />
-  <name value="Gem_erxComposition2" />
+  <url value="https://gematik.de/fhir/StructureDefinition/erxComposition" />
+  <name value="Gem_erxComposition" />
   <title value="Receipt for Fulfillment of ePrescription" />
   <status value="draft" />
   <date value="2020-04-16T13:43:56.0876617+00:00" />
