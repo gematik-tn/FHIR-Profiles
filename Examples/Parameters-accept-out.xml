@@ -9,7 +9,7 @@
 		<name value="erxBinary"/>
 		<resource>
 			<Binary>
-				<contentType value="application/pkcs"/>
+				<contentType value="application/pkcs7-mime"/>
 				<data value="654AD8BC122AF..."/>
 			</Binary>
 		</resource>
