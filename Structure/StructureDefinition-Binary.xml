@@ -18,7 +18,7 @@
   <differential>
     <element id="Binary.contentType">
       <path value="Binary.contentType" />
-      <fixedCode value="application/pcks??" />
+      <fixedCode value="application/pkcs7-mime" />
     </element>
     <element id="Binary.data">
       <path value="Binary.data" />
