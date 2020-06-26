@@ -44,7 +44,7 @@
         <key value="docBundle-1" />
         <severity value="error" />
         <human value="All referenced Resources must be contained in the Bundle" />
-        <expression value="Bundle.entry.descendants().reference.distinct().subsetOf(Bundle.entry.fullUrl)" />
+        <expression value="Bundle.entry.descendants().reference.distinct().subsetOf(%context.entry.fullUrl)" />
         <source value="https://gematik.de/fhir/StructureDefinition/erxReceipt" />
       </constraint>
     </element>
