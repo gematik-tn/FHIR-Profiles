@@ -146,10 +146,10 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medikament_Freitext" />
-        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medikament_PZN" />
-        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medikament_Rezeptur" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxTask" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_FreeText" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_Compounding" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_Ingredient" />
         <aggregation value="contained" />
       </type>
       <mustSupport value="true" />
