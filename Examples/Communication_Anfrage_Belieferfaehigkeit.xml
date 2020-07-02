@@ -3,22 +3,22 @@
 		<profile value="https://gematik.de/fhir/StructureDefinition/erxCommunicationInfoReq" />
 		<tag>
 			<code value="patient-provider" />
-			<display value="Anfrage Belieferfähigkeit" />
+			<display value="Anfrage Belieferfaehigkeit" />
 		</tag>
 	</meta>
 	<contained>
 		<Medication>
 			<id value="med0314"/>
 			<meta>
-				<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medikament_PZN|1.0.0"/>
+				<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.0"/>
 			</meta>
-			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_MEDIKAMENT_KATEGORIE">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
 				<valueCoding>
-					<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MEDIKAMENT_KATEGORIE"/>
+					<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_Medication_Category"/>
 					<code value="00"/>
 				</valueCoding>
 			</extension>
-			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_MEDIKAMENT_IMPFSTOFF">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Vaccine">
 				<valueBoolean value="false"/>
 			</extension>
 			<extension url="http://fhir.de/StructureDefinition/normgroesse">
@@ -26,14 +26,14 @@
 			</extension>
 			<code>
 				<coding>
-					<system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_ERP_PZN"/>
 					<code value="06313728"/>
 				</coding>
 				<text value="Sumatriptan-1a Pharma 100 mg Tabletten"/>
 			</code>
 			<form>
 				<coding>
-					<system value="KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+					<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
 					<code value="TAB"/>
 				</coding>
 			</form>
@@ -51,7 +51,9 @@
 	</contained>
 	<status value="unknown" />
 	<sent value="2020-03-12T18:01:10+00:00" />
-	<about value="#med0314" />
+	<about>
+		<reference value="#med0314" />
+	</about>
 	<recipient>
 		<identifier>
 			<system value="https://gematik.de/fhir/Namingsystem/TelematikID" />
@@ -66,11 +68,10 @@
 	</sender>
 	<payload>
 		<extension url="https://gematik.de/fhir/StructureDefinition/InsuranceProvider">
-			<identifier>
+			<valueIdentifier>
 				<system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
 				<value value="104212059" />
-			</identifier>
-			<display value="AOK Rheinland/Hamburg" />
+			</valueIdentifier>
 		</extension>
 		<extension url="https://gematik.de/fhir/StructureDefinition/SupplyOptionsType">
 			<extension url="onPremise">
@@ -93,6 +94,6 @@
 				<display value="Muster 16 (Apothekenpflichtige Arzneimittel)" />
 			</valueCoding>
 		</extension>
-		<contentString value="Hallo, ich wollte gern fragen, ob das Medikament bei Ihnen vorrätig ist." />
+		<contentString value="Hallo, ich wollte gern fragen, ob das Medikament bei Ihnen vorraetig ist." />
 	</payload>
 </Communication>

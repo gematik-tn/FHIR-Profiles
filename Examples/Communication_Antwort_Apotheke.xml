@@ -1,9 +1,9 @@
 <Communication xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="https://gematik.de/fhir/StructureDefinition/ErxCommunication" />
+		<profile value="https://gematik.de/fhir/StructureDefinition/erxCommunicationReply" />
 		<tag>
 			<code value="patient-provider" />
-			<display value="Antwort Belieferfähigkeit" />
+			<display value="Antwort Belieferfaehigkeit" />
 		</tag>
 	</meta>
 	<status value="unknown" />
@@ -32,6 +32,6 @@
 				<valueBoolean value="true" />
 			</extension>
 		</extension>
-		<contentString value="Hallo, wir haben das Medikament vorrätig. Kommen Sie gern in die Filiale oder wir schicken einen Boten." />
+		<contentString value="Hallo, wir haben das Medikament vorraetig. Kommen Sie gern in die Filiale oder wir schicken einen Boten." />
 	</payload>
 </Communication>
