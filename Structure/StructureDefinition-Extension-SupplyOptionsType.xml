@@ -98,7 +98,7 @@
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:shippment">
+    <element id="Extension.extension:shipment">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -106,17 +106,17 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.extension" />
-      <sliceName value="shippment" />
-      <short value="dispensation is offered/preferred by shippment" />
+      <sliceName value="shipment" />
+      <short value="dispensation is offered/preferred by shipment" />
       <definition value="Patient or pharmacy may state their preferred or offered supply option to ship medication via parcel shipping" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:shippment.url">
+    <element id="Extension.extension:shipment.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="shippment" />
+      <fixedUri value="shipment" />
     </element>
-    <element id="Extension.extension:shippment.value[x]">
+    <element id="Extension.extension:shipment.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
