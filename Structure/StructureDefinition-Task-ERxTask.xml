@@ -186,6 +186,7 @@
     </element>
     <element id="Task.performerType.coding">
       <path value="Task.performerType.coding" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.input">
@@ -256,11 +257,11 @@
     </element>
     <element id="Task.input:ePrescription.value[x].reference">
       <path value="Task.input.value[x].reference" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.input:ePrescription.value[x].identifier">
       <path value="Task.input.value[x].identifier" />
+      <min value="1" />
       <mustSupport value="false" />
     </element>
     <element id="Task.input:patientReceipt">
@@ -295,6 +296,7 @@
         <display value="Type of the Bundle" />
       </code>
       <min value="1" />
+      <fixedUri value="https://gematik.de/fhir/CodeSystem/Documenttype" />
     </element>
     <element id="Task.input:patientReceipt.type.coding.code">
       <path value="Task.input.type.coding.code" />
@@ -313,11 +315,11 @@
     </element>
     <element id="Task.input:patientReceipt.value[x].reference">
       <path value="Task.input.value[x].reference" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Task.input:patientReceipt.value[x].identifier">
       <path value="Task.input.value[x].identifier" />
+      <min value="1" />
       <mustSupport value="false" />
     </element>
     <element id="Task.output">
@@ -362,12 +364,12 @@
     <element id="Task.output:receipt.type.coding.system">
       <path value="Task.output.type.coding.system" />
       <min value="1" />
-      <fixedUri value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
+      <fixedUri value="https://gematik.de/fhir/CodeSystem/Documenttype" />
     </element>
     <element id="Task.output:receipt.type.coding.code">
       <path value="Task.output.type.coding.code" />
       <min value="1" />
-      <fixedCode value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
+      <fixedCode value="3" />
     </element>
     <element id="Task.output:receipt.value[x]">
       <path value="Task.output.value[x]" />
@@ -381,8 +383,11 @@
     </element>
     <element id="Task.output:receipt.value[x].reference">
       <path value="Task.output.value[x].reference" />
-      <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Task.output:receipt.value[x].identifier">
+      <path value="Task.output.value[x].identifier" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
