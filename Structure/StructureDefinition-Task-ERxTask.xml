@@ -257,7 +257,7 @@
     </element>
     <element id="Task.input:ePrescription.value[x].reference">
       <path value="Task.input.value[x].reference" />
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="Task.input:ePrescription.value[x].identifier">
       <path value="Task.input.value[x].identifier" />
@@ -315,7 +315,7 @@
     </element>
     <element id="Task.input:patientReceipt.value[x].reference">
       <path value="Task.input.value[x].reference" />
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="Task.input:patientReceipt.value[x].identifier">
       <path value="Task.input.value[x].identifier" />
@@ -383,7 +383,7 @@
     </element>
     <element id="Task.output:receipt.value[x].reference">
       <path value="Task.output.value[x].reference" />
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="Task.output:receipt.value[x].identifier">
       <path value="Task.output.value[x].identifier" />
