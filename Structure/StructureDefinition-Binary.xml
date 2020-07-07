@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://gematik.de/fhir/StructureDefinition/erxComposition" />
+  <url value="https://gematik.de/fhir/StructureDefinition/erxBinary" />
   <name value="Gem_erxBinary" />
   <status value="draft" />
   <description value="PCKS signed ePrescription Bundle" />
