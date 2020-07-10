@@ -53,7 +53,6 @@
       <sliceName value="acceptDate" />
       <short value="Accept Date of the prescription" />
       <definition value="Date when insurance company accepts the prescription." />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -65,7 +64,6 @@
       <sliceName value="expiryDate" />
       <short value="Expiry Date of the Prescription" />
       <definition value="Date when the prescription is expired and can not be redeemed in the pharmacy." />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
