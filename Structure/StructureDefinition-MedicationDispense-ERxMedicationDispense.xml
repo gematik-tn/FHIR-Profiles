@@ -93,6 +93,7 @@
     </element>
     <element id="MedicationDispense.subject.identifier">
       <path value="MedicationDispense.subject.identifier" />
+      <short value="The patients KVNR" />
       <min value="1" />
       <type>
         <code value="Identifier" />
@@ -117,12 +118,6 @@
       </slicing>
     </element>
     <element id="MedicationDispense.performer.actor.identifier:TelematikID">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationDispense.performer.actor.identifier" />
       <sliceName value="TelematikID" />
       <min value="1" />

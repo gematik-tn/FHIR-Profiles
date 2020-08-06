@@ -121,5 +121,17 @@
       <path value="AuditEvent.entity.name" />
       <min value="1" />
     </element>
+    <element id="AuditEvent.Identifier:PrescriptionID">
+      <path value="AuditEvent.identifier" />
+      <sliceName value="PrescriptionID" />
+      <short value="the PrescriptionID (Rezept-ID)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/erxPrescriptionID" />
+      </type>
+      <mustSupport value="true" />
+    </element>
   </differential>
 </StructureDefinition>

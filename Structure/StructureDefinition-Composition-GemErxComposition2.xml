@@ -114,6 +114,11 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.event.period.end">
+      <path value="Composition.event.period.end" />
+      <definition value="The end of the period. Time when the dispensation finished, i.e. when server creates the receipt." />
+      <min value="1" />
+    </element>
     <element id="Composition.event.detail">
       <path value="Composition.event.detail" />
       <short value="The dispensation this receipt relates to" />
