@@ -20,7 +20,12 @@
 				<display value="human user" />
 			</coding>
 		</type>
-		<who value="606358757" />
+		<who>
+		  <identifier>
+            <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"/>
+            <value value="606358750"/>
+          </identifier>
+		</who>
 		<name value="Praxis Dr. Müller" />
 		<requestor value="false" />
 	</agent>
