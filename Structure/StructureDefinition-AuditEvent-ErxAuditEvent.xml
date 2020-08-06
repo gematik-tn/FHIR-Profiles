@@ -47,6 +47,17 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
   <derivation value="constraint" />
   <differential>
+    <element id="AuditEvent.identifier">
+      <path value="AuditEvent.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
     <element id="AuditEvent.type.system">
       <path value="AuditEvent.type.system" />
       <code>
