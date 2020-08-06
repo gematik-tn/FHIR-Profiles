@@ -5,10 +5,6 @@
 			<display value="Valid Example with minimal data." />
 		</tag>
 	</meta>
-	<identifier>
-        <system value="https://gematik.de/fhir/Namingsystem/PrescriptionID" />
-        <value value="160.123.456.789.123.58" />
-    </identifier>
 	<type>
 		<system value="http://terminology.hl7.org/CodeSystem/audit-event-type" />
 		<code value="rest" />
@@ -24,6 +20,7 @@
 				<display value="human user" />
 			</coding>
 		</type>
+		<who value="606358757" />
 		<name value="Praxis Dr. Müller" />
 		<requestor value="false" />
 	</agent>
@@ -37,5 +34,6 @@
 			<reference value="Task/4711" />
 		</what>
 		<name value="X123456789" />
+		<description value="160.123.456.789.123.58" />
 	</entity>
 </AuditEvent>

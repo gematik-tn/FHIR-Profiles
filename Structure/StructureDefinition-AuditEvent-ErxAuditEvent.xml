@@ -47,17 +47,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
   <derivation value="constraint" />
   <differential>
-    <element id="AuditEvent.identifier">
-      <path value="AuditEvent.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
     <element id="AuditEvent.type.system">
       <path value="AuditEvent.type.system" />
       <code>
@@ -130,19 +119,15 @@
     </element>
     <element id="AuditEvent.entity.name">
       <path value="AuditEvent.entity.name" />
+      <short value="KVNR of patient that the auditEvent refers to" />
+      <definition value="KVNR of patient that the auditEvent refers to, used as filter criteria when patient accesses its data" />
       <min value="1" />
     </element>
-    <element id="AuditEvent.Identifier:PrescriptionID">
-      <path value="AuditEvent.identifier" />
-      <sliceName value="PrescriptionID" />
-      <short value="the PrescriptionID (Rezept-ID)" />
+    <element id="AuditEvent.entity.description">
+      <path value="AuditEvent.entity.description" />
+      <short value="PrescriptionID (RezeptID)" />
+      <definition value="PrescriptionID (RezeptID) to have a relation to insurance company data when Task already deleted" />
       <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Identifier" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/erxPrescriptionID" />
-      </type>
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
