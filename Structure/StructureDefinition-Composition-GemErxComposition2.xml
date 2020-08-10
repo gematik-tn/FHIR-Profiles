@@ -41,6 +41,35 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Composition.extension">
+      <path value="Composition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.extension:Beneficiary">
+      <path value="Composition.extension" />
+      <sliceName value="Beneficiary" />
+      <short value="The ID of the beneficiary of the erx receipt (e.g. TelematikID of pharmacy)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/BeneficiaryExtension" />
+      </type>
+    </element>
+    <element id="Composition.extension:Beneficiary.value[x].system">
+      <path value="Composition.extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="Composition.extension:Beneficiary.value[x].value">
+      <path value="Composition.extension.value[x].value" />
+      <min value="1" />
+    </element>
     <element id="Composition.status">
       <path value="Composition.status" />
       <short value="Status = &quot;final&quot;" />

@@ -18,14 +18,26 @@
   <content value="complete" />
   <concept>
     <code value="10" />
-    <display value="sofort" />
+    <display value="sofort verfügbar" />
   </concept>
   <concept>
     <code value="20" />
-    <display value="kurzfristig" />
+    <display value="noch Heute verfügbar" />
   </concept>
   <concept>
     <code value="30" />
-    <display value="später" />
+    <display value="am nächsten Werktag - vormittags" />
   </concept>
+  <concept>
+    <code value="40" />
+    <display value="am nächsten Werktag- nachmittags" />
+  </concept>
+  <concept>
+    <code value="50" />
+    <display value="nicht verfügbar" />
+  </concept>
+  <concept>
+    <code value="90" />
+    <display value="unbekannt" />
+  </concept>  
 </CodeSystem>

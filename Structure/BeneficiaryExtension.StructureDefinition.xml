@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://gematik.de/fhir/StructureDefinition/BeneficiaryExtension" />
+  <name value="BeneficiaryExtension" />
+  <status value="draft" />
+  <description value="The beneficiary (e.g. pharmacy) of the erx-receipt that is created when the ePrescription-workflow finishes" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Composition" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="The beneficiary of the receipt" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://gematik.de/fhir/StructureDefinition/BeneficiaryExtension" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <fixedUri value="https://gematik.de/fhir/Namingsystem/TelematikID" />
+    </element>
+  </differential>
+</StructureDefinition>

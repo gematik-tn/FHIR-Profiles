@@ -21,21 +21,36 @@
 	<expansion>
 		<identifier value="fe7e0ee0-f72e-4909-bf48-7c84ff97bac5"/>
 		<timestamp value="2020-05-07T07:48:29+00:00"/>
-		<total value="3"/>
+		<total value="6"/>
 		<contains>
 			<system value="https://gematik.de/fhir/CodeSystem/AvailabilityStatus"/>
 			<code value="10"/>
-			<display value="sofort"/>
+			<display value="sofort verfügbar"/>
 		</contains>
 		<contains>
 			<system value="https://gematik.de/fhir/CodeSystem/AvailabilityStatus"/>
 			<code value="20"/>
-			<display value="kurzfristig"/>
+			<display value="noch Heute verfügbar"/>
 		</contains>
 		<contains>
 			<system value="https://gematik.de/fhir/CodeSystem/AvailabilityStatus"/>
 			<code value="30"/>
-			<display value="später"/>
+			<display value="am nächsten Werktag - vormittags"/>
+		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/AvailabilityStatus"/>
+			<code value="40"/>
+			<display value="am nächsten Werktag- nachmittags"/>
+		</contains>
+				<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/AvailabilityStatus"/>
+			<code value="50"/>
+			<display value="nicht verfügbar"/>
+		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/AvailabilityStatus"/>
+			<code value="90"/>
+			<display value="unbekannt"/>
 		</contains>
 	</expansion>
 </ValueSet>
