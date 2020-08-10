@@ -147,7 +147,7 @@
     <element id="Task.for">
       <path value="Task.for" />
       <short value="Identifier of Patient (KVID)" />
-      <min value="1" />
+      <definition value="The entity who benefits from the performance of the service specified in the task (e.g., the patient). Will be filled upon $activate-operation" />
       <mustSupport value="true" />
     </element>
     <element id="Task.for.identifier">
