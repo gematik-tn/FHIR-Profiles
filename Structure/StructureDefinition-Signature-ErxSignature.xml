@@ -43,7 +43,7 @@
     </element>
     <element id="Signature.type:AuthorsSignature.system">
       <path value="Signature.type.system" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/signature-type" />
+      <fixedUri value="urn:iso-astm:E1762-95:2013" />
     </element>
     <element id="Signature.type:AuthorsSignature.code">
       <path value="Signature.type.code" />
@@ -56,7 +56,7 @@
     </element>
     <element id="Signature.type:VerificationSignature.system">
       <path value="Signature.type.system" />
-      <fixedUri value="http://hl7.org/fhir/ValueSet/signature-type" />
+      <fixedUri value="urn:iso-astm:E1762-95:2013" />
     </element>
     <element id="Signature.type:VerificationSignature.code">
       <path value="Signature.type.code" />
