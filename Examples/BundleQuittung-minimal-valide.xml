@@ -16,8 +16,14 @@
 		<resource>
 			<Composition>
 				<meta>
-					<profile value="https://gematik.de/fhir/StructureDefinition/ERxComposition2" />
+					<profile value="https://gematik.de/fhir/StructureDefinition/erxComposition" />
 				</meta>
+				<extension url="https://gematik.de/fhir/StructureDefinition/BeneficiaryExtension">
+					<valueIdentifier>
+						<system value="https://gematik.de/fhir/Namingsystem/TelematikID" />
+						<value value="606358757" />
+					</valueIdentifier>
+				</extension>
 				<status value="final" />
 				<type>
 					<coding>
@@ -33,10 +39,8 @@
 				<event>
 					<period>
 						<start value="2020-03-20T07:23:34.328+00:00" />
+						<end value="2020-03-20T07:31:34.328+00:00" />
 					</period>
-					<detail>
-						<reference value="https://prescriptionserver.telematik/MedicationDispense/example" />
-					</detail>
 				</event>
 			</Composition>
 		</resource>
@@ -51,86 +55,6 @@
 			</Device>
 		</resource>
 	</entry>
-	<entry>
-		<fullUrl value="https://prescriptionserver.telematik/MedicationDispense/example" />
-		<resource>
-			<MedicationDispense>
-				<meta>
-					<profile value="https://gematik.de/fhir/StructureDefinition/ERxMedicationDispense" />
-				</meta>
-				<identifier>
-					<system value="https://gematik.de/fhir/NamingSystem/PrescriptionID" />
-					<value value="12345678" />
-				</identifier>
-				<status value="completed" />
-				<medicationReference>
-					<reference value="https://prescriptionserver.telematik/Medication/example" />
-					<display value="Sumatriptan-1a Pharma 100 mg Tabletten" />
-				</medicationReference>
-				<subject>
-					<identifier>
-						<system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
-						<value value="X234567890" />
-					</identifier>
-				</subject>
-				<performer>
-					<actor>
-						<identifier>
-							<system value="https://gematik.de/fhir/Namingsystem/TelematikID" />
-							<value value="606358757" />
-						</identifier>
-					</actor>
-				</performer>
-				<whenHandedOver value="2020-03-20T07:13:00+05:00" />
-				<dosageInstruction>
-					<text value="1-0-1-0" />
-				</dosageInstruction>
-			</MedicationDispense>
-		</resource>
-	</entry>
-	<entry>
-		<fullUrl value="https://prescriptionserver.telematik/Medication/example" />
-		<resource>
-			<Medication>
-				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_MEDIKAMENT_KATEGORIE">
-					<valueCoding>
-						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_ERP_MEDIKAMENT_KATEGORIE" />
-						<code value="00" />
-					</valueCoding>
-				</extension>
-				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_MEDIKAMENT_IMPFSTOFF">
-					<valueBoolean value="false" />
-				</extension>
-				<extension url="http://fhir.de/StructureDefinition/normgroesse">
-					<valueCode value="N1" />
-				</extension>
-				<code>
-					<coding>
-						<system value="http://fhir.de/CodeSystem/ifa/pzn" />
-						<code value="06313728" />
-					</coding>
-					<text value="Sumatriptan-1a Pharma 100 mg Tabletten" />
-				</code>
-				<form>
-					<coding>
-						<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM" />
-						<code value="TAB" />
-					</coding>
-				</form>
-				<amount>
-					<numerator>
-						<value value="12" />
-						<unit value="TAB" />
-						<system value="http://unitsofmeasure.org" />
-						<code value="{tbl}" />
-					</numerator>
-					<denominator>
-						<value value="1" />
-					</denominator>
-				</amount>
-			</Medication>
-		</resource>
-	</entry>
 	<signature>
 		<type>
 			<system value="http://hl7.org/fhir/ValueSet/signature-type" />
@@ -140,6 +64,7 @@
 		<who>
 			<reference value="https://prescriptionserver.telematik/Device/eRxService" />
 		</who>
+		<sigFormat value="application/pkcs7-mime" />			
 		<data value="MIII FQYJ KoZI hvcN AQcC oIII BjCC CAIC AQEx DzAN Bglg hkgB ZQME AgEF ADAL" />
 	</signature>
 </Bundle>
