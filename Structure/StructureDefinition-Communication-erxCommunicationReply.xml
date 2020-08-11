@@ -144,10 +144,10 @@
         <profile value="https://gematik.de/fhir/StructureDefinition/SupplyOptionsType" />
       </type>
     </element>
-    <element id="Communication.payload.extension:myExtension">
+    <element id="Communication.payload.extension:AvailabilityStatus">
       <path value="Communication.payload.extension" />
-      <sliceName value="myExtension" />
-      <min value="0" />
+      <sliceName value="AvailabilityStatus" />
+      <short value="Availability Status of queried medication" />
       <max value="1" />
       <type>
         <code value="Extension" />
