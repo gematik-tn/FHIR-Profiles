@@ -37,34 +37,26 @@
       </binding>
     </element>
     <element id="Signature.type:AuthorsSignature">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Signature.type" />
       <sliceName value="AuthorsSignature" />
       <max value="1" />
-      <fixedCoding>
-        <system value="urn:iso-astm:E1762-95:2013" />
-        <code value="1.2.840.10065.1.12.1.1" />
-      </fixedCoding>
+    </element>
+    <element id="Signature.type:AuthorsSignature.system">
+      <path value="Signature.type.system" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/signature-type" />
+    </element>
+    <element id="Signature.type:AuthorsSignature.code">
+      <path value="Signature.type.code" />
+      <fixedCode value="1.2.840.10065.1.12.1.1" />
     </element>
     <element id="Signature.type:VerificationSignature">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Signature.type" />
       <sliceName value="VerificationSignature" />
       <max value="1" />
     </element>
     <element id="Signature.type:VerificationSignature.system">
       <path value="Signature.type.system" />
-      <fixedUri value="urn:iso-astm:E1762-95:2013" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/signature-type" />
     </element>
     <element id="Signature.type:VerificationSignature.code">
       <path value="Signature.type.code" />
