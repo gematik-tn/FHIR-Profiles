@@ -111,7 +111,7 @@
       <short value="Reference to verifying service (Device)" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxDevice" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
