@@ -97,7 +97,8 @@
       <path value="Task.identifier" />
       <sliceName value="PrescriptionID" />
       <short value="Prescription Identifier" />
-      <definition value="The prescription identifier ist the main identifier for the task ressource and the whole prescription workflow. This identifier is genereted by the &quot;E-Rezept Fachdienst&quot; and should not be changed manually." />
+      <definition value="The prescription identifier is the main identifier for the task ressource and the whole prescription workflow. This identifier is genereted by the &quot;E-Rezept Fachdienst&quot; and should not be changed manually." />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Identifier" />
@@ -175,9 +176,6 @@
       <min value="1" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="TaskPerformerType" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://gematik.de/fhir/ValueSet/Organizationtype" />
       </binding>
@@ -188,9 +186,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Task.input">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Parameter" />
-      </extension>
       <path value="Task.input" />
       <slicing>
         <discriminator>
@@ -205,9 +200,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Task.input:ePrescription">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Parameter" />
-      </extension>
       <path value="Task.input" />
       <sliceName value="ePrescription" />
       <max value="1" />
@@ -216,9 +208,6 @@
       <path value="Task.input.type" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="TaskInputParameterType" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://gematik.de/fhir/ValueSet/Documenttype" />
       </binding>
@@ -263,9 +252,6 @@
       <mustSupport value="false" />
     </element>
     <element id="Task.input:patientReceipt">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Parameter" />
-      </extension>
       <path value="Task.input" />
       <sliceName value="patientReceipt" />
       <max value="1" />
@@ -274,9 +260,6 @@
       <path value="Task.input.type" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="TaskInputParameterType" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://gematik.de/fhir/ValueSet/DOCUMENTTYPE" />
       </binding>
@@ -346,9 +329,6 @@
     <element id="Task.output:receipt.type">
       <path value="Task.output.type" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="TaskOutputParameterType" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://gematik.de/fhir/ValueSet/DOCUMENTTYPE" />
       </binding>
