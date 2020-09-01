@@ -57,6 +57,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <short value="identifier of ePrescription" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Bundle.identifier:PrescriptionID">
@@ -88,6 +90,9 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <short value="ePrescription receipt entry" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Bundle.entry:Composition">
@@ -112,6 +117,17 @@
         <profile value="https://gematik.de/fhir/StructureDefinition/erxSignature" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Bundle.signature.type">
+      <path value="Bundle.signature.type" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
