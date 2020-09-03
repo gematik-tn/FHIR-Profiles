@@ -56,7 +56,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://example.org/fhir/StructureDefinition/AcceptDate" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/AcceptDate" />
       </type>
     </element>
     <element id="Task.extension:expiryDate">
