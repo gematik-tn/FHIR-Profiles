@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2020-04-16T13:46:53.84+00:00" />
   </meta>
-  <url value="https://example.org/fhir/StructureDefinition/AcceptDate" />
+  <url value="https://gematik.de/fhir/StructureDefinition/AcceptDate" />
   <version value="1.0.0" />
   <name value="AcceptDate" />
   <title value="Date of confirmation of the prescription" />
@@ -33,12 +33,12 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://example.org/fhir/StructureDefinition/AcceptDate" />
+      <fixedUri value="https://gematik.de/fhir/StructureDefinition/AcceptDate" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="dateTime" />
+        <code value="date" />
       </type>
     </element>
   </differential>
