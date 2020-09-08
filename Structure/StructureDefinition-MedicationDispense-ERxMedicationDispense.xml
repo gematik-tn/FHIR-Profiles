@@ -131,7 +131,7 @@
     </element>
     <element id="MedicationDispense.whenPrepared">
       <path value="MedicationDispense.whenPrepared" />
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="MedicationDispense.whenHandedOver">
       <path value="MedicationDispense.whenHandedOver" />
