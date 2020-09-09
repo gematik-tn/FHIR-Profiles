@@ -98,7 +98,7 @@
     </element>
     <element id="Communication.sender">
       <path value="Communication.sender" />
-      <min value="1" />
+      <definition value="Message sender - set by ePrescription server using client AuthN-Credential&#xD;&#xA;The entity (e.g. person, organization) which was the source of the communication." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />

@@ -32,36 +32,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Communication.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.meta.security.display" />
-    </element>
-    <element id="Communication.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.meta.tag.display" />
-    </element>
-    <element id="Communication.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.identifier.type.text" />
-    </element>
-    <element id="Communication.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.identifier.assigner.display" />
-    </element>
     <element id="Communication.basedOn">
       <path value="Communication.basedOn" />
       <min value="1" />
@@ -78,171 +48,9 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Communication.basedOn.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.basedOn.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.basedOn.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.basedOn.identifier.type.text" />
-    </element>
-    <element id="Communication.basedOn.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.basedOn.identifier.assigner.display" />
-    </element>
-    <element id="Communication.basedOn.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.basedOn.display" />
-    </element>
-    <element id="Communication.partOf.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.partOf.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.partOf.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.partOf.identifier.type.text" />
-    </element>
-    <element id="Communication.partOf.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.partOf.display" />
-    </element>
-    <element id="Communication.inResponseTo.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.inResponseTo.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.inResponseTo.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.inResponseTo.identifier.type.text" />
-    </element>
-    <element id="Communication.inResponseTo.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.inResponseTo.display" />
-    </element>
     <element id="Communication.status">
       <path value="Communication.status" />
       <fixedCode value="unknown" />
-    </element>
-    <element id="Communication.statusReason.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.statusReason.coding.display" />
-    </element>
-    <element id="Communication.statusReason.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.statusReason.text" />
-    </element>
-    <element id="Communication.category.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.category.coding.display" />
-    </element>
-    <element id="Communication.category.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.category.text" />
-    </element>
-    <element id="Communication.medium.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.medium.coding.display" />
-    </element>
-    <element id="Communication.medium.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.medium.text" />
-    </element>
-    <element id="Communication.subject.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.subject.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.subject.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.subject.identifier.type.text" />
-    </element>
-    <element id="Communication.subject.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.subject.display" />
-    </element>
-    <element id="Communication.topic.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.topic.coding.display" />
-    </element>
-    <element id="Communication.topic.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.topic.text" />
-    </element>
-    <element id="Communication.about.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.about.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.about.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.about.identifier.type.text" />
-    </element>
-    <element id="Communication.about.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.about.display" />
-    </element>
-    <element id="Communication.encounter.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.encounter.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.encounter.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.encounter.identifier.type.text" />
-    </element>
-    <element id="Communication.encounter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.encounter.display" />
     </element>
     <element id="Communication.sent">
       <path value="Communication.sent" />
@@ -267,45 +75,9 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Communication.recipient.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.recipient.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.recipient.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.recipient.identifier.type.text" />
-    </element>
-    <element id="Communication.recipient.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.recipient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.recipient.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.recipient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Communication.recipient.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.recipient.identifier.assigner.display" />
-    </element>
-    <element id="Communication.recipient.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.recipient.display" />
-    </element>
     <element id="Communication.sender">
       <path value="Communication.sender" />
-      <min value="1" />
+      <definition value="Message sender - set by ePrescription server using client AuthN-Credential&#xD;&#xA;The entity (e.g. person, organization) which was the source of the communication." />
       <mustSupport value="true" />
     </element>
     <element id="Communication.sender.identifier">
@@ -316,72 +88,6 @@
         <profile value="http://fhir.de/StructureDefinition/identifier-kvid-10" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Communication.sender.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.sender.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.sender.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.sender.identifier.type.text" />
-    </element>
-    <element id="Communication.sender.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.sender.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.sender.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.sender.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Communication.sender.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.sender.identifier.assigner.display" />
-    </element>
-    <element id="Communication.sender.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.sender.display" />
-    </element>
-    <element id="Communication.reasonCode.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.reasonCode.coding.display" />
-    </element>
-    <element id="Communication.reasonCode.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.reasonCode.text" />
-    </element>
-    <element id="Communication.reasonReference.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.reasonReference.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.reasonReference.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.reasonReference.identifier.type.text" />
-    </element>
-    <element id="Communication.reasonReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.reasonReference.display" />
     </element>
     <element id="Communication.payload">
       <path value="Communication.payload" />
@@ -407,36 +113,6 @@
         <code value="Extension" />
         <profile value="https://gematik.de/fhir/StructureDefinition/InsuranceProvider" />
       </type>
-    </element>
-    <element id="Communication.payload.extension:InsuranceProvider.value[x].type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.payload.extension.value[x].type.coding.display" />
-    </element>
-    <element id="Communication.payload.extension:InsuranceProvider.value[x].type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.payload.extension.value[x].type.text" />
-    </element>
-    <element id="Communication.payload.extension:InsuranceProvider.value[x].assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.payload.extension.value[x].assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Communication.payload.extension:InsuranceProvider.value[x].assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.payload.extension.value[x].assigner.identifier.type.text" />
-    </element>
-    <element id="Communication.payload.extension:InsuranceProvider.value[x].assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Communication.payload.extension.value[x].assigner.display" />
     </element>
     <element id="Communication.payload.content[x]">
       <path value="Communication.payload.content[x]" />

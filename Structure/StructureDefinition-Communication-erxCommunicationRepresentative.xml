@@ -77,7 +77,7 @@
     </element>
     <element id="Communication.sender">
       <path value="Communication.sender" />
-      <min value="1" />
+      <definition value="Message sender - set by ePrescription server using client AuthN-Credential&#xD;&#xA;The entity (e.g. person, organization) which was the source of the communication." />
       <mustSupport value="true" />
     </element>
     <element id="Communication.sender.identifier">
