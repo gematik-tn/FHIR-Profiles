@@ -76,17 +76,11 @@
     </element>
     <element id="MedicationDispense.medication[x]">
       <path value="MedicationDispense.medication[x]" />
+      <definition value="Generic medication profile on dispensed medication. rather than specific KBV-Profile to be more flexible in medicationdispensation process at pharacy" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medikament_Freitext" />
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medikament_PZN" />
         <aggregation value="contained" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationDispense.medication[x].reference">
-      <path value="MedicationDispense.medication[x].reference" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.subject">
