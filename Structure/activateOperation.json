@@ -28,11 +28,11 @@
       ]
     },
     {
-      "name": "updated Task",
+      "name": "return",
       "use": "out",
       "min": 1,
       "max": "1",
-      "documentation": "The activated Task.",
+      "documentation": "Return the updated and activated Task.",
       "type": "Task"
     }
   ]
