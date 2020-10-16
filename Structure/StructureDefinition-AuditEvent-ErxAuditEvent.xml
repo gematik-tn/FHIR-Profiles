@@ -4,6 +4,10 @@
   <meta>
     <lastUpdated value="2020-04-16T13:41:55.87+00:00" />
   </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">Beschreibung des Inhalts des Zugriffsprotokolleintrags in einfacher Sprache</div>
+  </text>
   <url value="https://gematik.de/fhir/StructureDefinition/erxAuditEvent" />
   <version value="1.0.0" />
   <name value="Gem_erxAuditEvent" />
@@ -839,8 +843,8 @@
       <definition value="Identifier for the category of event." />
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="This field enables queries of messages by implementation-defined event categories." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="AuditEvent.subtype" />
         <min value="0" />
@@ -983,7 +987,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -1635,7 +1639,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -2091,7 +2095,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -2763,7 +2767,7 @@
       <definition value="Logical source location within the healthcare enterprise network.  For example, a hospital or other provider location within a multi-entity provider group." />
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
       <requirements value="This value differentiates among the sites in a multi-site enterprise health information system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="AuditEvent.source.site" />
@@ -2839,7 +2843,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -3416,7 +3420,7 @@
         <human value="SHALL have a contained resource if a local reference is provided" />
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <source value="http://hl7.org/fhir/StructureDefinition/AuditEvent" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -4142,10 +4146,6 @@
     </element>
   </snapshot>
   <differential>
-    <element id="AuditEvent">
-      <path value="AuditEvent" />
-      <definition value="A record of an event made for purposes of maintaining a security log. Typical uses include detection of intrusion attempts and monitoring for inappropriate usage." />
-    </element>
     <element id="AuditEvent.type.system">
       <path value="AuditEvent.type.system" />
       <code>
@@ -4159,6 +4159,11 @@
       <path value="AuditEvent.type.code" />
       <min value="1" />
       <fixedCode value="rest" />
+    </element>
+    <element id="AuditEvent.subtype">
+      <path value="AuditEvent.subtype" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="AuditEvent.action">
       <path value="AuditEvent.action" />
@@ -4187,6 +4192,7 @@
     </element>
     <element id="AuditEvent.source.site">
       <path value="AuditEvent.source.site" />
+      <min value="1" />
       <fixedString value="E-Rezept Fachdienst" />
     </element>
     <element id="AuditEvent.source.observer">
