@@ -1,6 +1,6 @@
 {
   "resourceType": "OperationDefinition",
-  "url": "http://gematik.de/fhir/StructureDefinition/ActivateOperationDefinition",
+  "url": "http://gematik.de/fhir/OperationDefinition/ActivateOperationDefinition",
   "version": "V1.0",
   "name": "Activate Operation",
   "status": "draft",
