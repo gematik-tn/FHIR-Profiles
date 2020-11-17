@@ -6,13 +6,13 @@
     </tag>
   </meta> 
   <extension url="https://gematik.de/fhir/StructureDefinition/PaymentMethod">
-    <CodeableConcept>
+    <valueCodeableConcept>
       <coding>
-        <system value="https://gematik.de/fhir/StructureDefinition/PaymentMethod"/> 
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0570"/> 
         <code value="CASH"/>
         <display value="Cash"/>
       </coding>
-    </CodeableConcept>
+    </valueCodeableConcept>
   </extension>
   <extension url="https://gematik.de/fhir/StructureDefinition/CourierService">
     <valueString value="Lieferung im Bezirk Berlin Mitte möglich."/>
