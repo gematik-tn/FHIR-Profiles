@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <Location xmlns="http://hl7.org/fhir">
    <meta>
         <profile value="https://gematik.de/fhir/StructureDefinition/Gem_erxLocation" />
         <tag>
             <display value="Valid Example." />
         </tag>
-    </meta>
-  <id value="test"/> 
+    </meta> 
   <extension url="https://gematik.de/fhir/StructureDefinition/PaymentMethod">
     <valueCodeableConcept>
       <coding>
