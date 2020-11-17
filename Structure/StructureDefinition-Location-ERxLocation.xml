@@ -103,10 +103,6 @@
       <path value="Location.position" />
       <mustSupport value="true" />
     </element>
-    <element id="Location.managingOrganization.reference">
-      <path value="Location.managingOrganization.reference" />
-      <fixedString value="https://gematik.de/fhir/StructureDefinition/erxOrganization" />
-    </element>
     <element id="Location.hoursOfOperation">
       <path value="Location.hoursOfOperation" />
       <definition value="What days/times during a week is this location usually open. It can be seperated in regular opening hours, seasonal opening hours and opening hours of the emergency service." />

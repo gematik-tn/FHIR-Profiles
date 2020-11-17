@@ -1,26 +1,26 @@
 <Location xmlns="http://hl7.org/fhir">
-   <meta>
-        <profile value="https://gematik.de/fhir/StructureDefinition/Gem_erxLocation" />
-        <tag>
-            <display value="Valid Example." />
-        </tag>
-    </meta> 
+  <meta>
+    <profile value="https://gematik.de/fhir/StructureDefinition/Gem_erxLocation" />
+    <tag>
+      <display value="Valid Example." />
+    </tag>
+  </meta> 
   <extension url="https://gematik.de/fhir/StructureDefinition/PaymentMethod">
     <valueCodeableConcept>
       <coding>
-        <system value="https://gematik.de/fhir/StructureDefinition/PaymentMethod" /> 
-        <code value="CASH" />
-        <display value="Cash" />
+        <system value="https://gematik.de/fhir/StructureDefinition/PaymentMethod"/> 
+        <code value="CASH"/>
+        <display value="Cash"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-<extension url="https://gematik.de/fhir/StructureDefinition/CourierService">
-    <couroreservice value="true"/>
+  <extension url="https://gematik.de/fhir/StructureDefinition/CourierService">
+    <valueString value="Lieferung im Bezirk Berlin Mitte möglich."/>
   </extension>
   <identifier>
-      <system value="https://gematik.de/fhir/Namingsystem/TelematikID"</>
-      <value value="606358757"</>
-   </identifier>
+      <system value="https://gematik.de/fhir/Namingsystem/TelematikID"/>
+      <value value="606358757"/>
+  </identifier>
   <status value="active"/> 
   <name value="Apotheke an der Ecke"/> 
   <description value="Ihre Apotheke an der Ecke. Hier wird Ihnen geholfen."/> 
@@ -32,11 +32,7 @@
     </coding> 
   </type> 
   <hoursOfOperation> 
-    <openingTime> 
-      <time value="08:00" /> 
-    </openingTime> 
-    <closingTime> 
-      <time value="19:00" /> 
-    </closingTime> 
-  </physicalType>   
+    <openingTime value="00:08:00" /> 
+    <closingTime value="00:19:00" /> 
+  </hoursOfOperation>       
 </Location> 
