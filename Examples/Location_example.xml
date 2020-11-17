@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+   <meta>
+        <profile value="https://gematik.de/fhir/StructureDefinition/Gem_erxLocation" />
+        <tag>
+            <display value="Valid Example." />
+        </tag>
+    </meta>
+  <id value="test"/> 
+  <extension url="https://gematik.de/fhir/StructureDefinition/PaymentMethod">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://gematik.de/fhir/StructureDefinition/PaymentMethod" /> 
+        <code value="CASH" />
+        <display value="Cash" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+<extension url="https://gematik.de/fhir/StructureDefinition/CourierService">
+    <couroreservice value="true"/>
+  </extension>
+  <identifier>
+      <system value="https://gematik.de/fhir/Namingsystem/TelematikID"</>
+      <value value="606358757"</>
+   </identifier>
+  <status value="active"/> 
+  <name value="Apotheke an der Ecke"/> 
+  <description value="Ihre Apotheke an der Ecke. Hier wird Ihnen geholfen."/> 
+  <type> 
+    <coding> 
+      <system value="https://gematik.de/fhir/ValueSet/Organizationtype"/> 
+      <code value="1.2.276.0.76.4.54"/> 
+      <display value="Öffentliche Apotheke"/> 
+    </coding> 
+  </type> 
+  <hoursOfOperation> 
+    <openingTime> 
+      <time value="08:00" /> 
+    </openingTime> 
+    <closingTime> 
+      <time value="19:00" /> 
+    </closingTime> 
+  </physicalType>   
+</Location> 
