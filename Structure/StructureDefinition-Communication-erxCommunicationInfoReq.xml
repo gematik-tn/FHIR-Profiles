@@ -32,24 +32,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Communication.extension">
-      <path value="Communication.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Communication.extension:PackageQuantity">
-      <path value="Communication.extension" />
-      <sliceName value="PackageQuantity" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/PackageQuanity" />
-      </type>
-    </element>
     <element id="Communication.status">
       <path value="Communication.status" />
       <fixedCode value="unknown" />
@@ -166,6 +148,14 @@
       <type>
         <code value="Extension" />
         <profile value="https://gematik.de/fhir/StructureDefinition/PrescriptionType" />
+      </type>
+    </element>
+    <element id="Communication.payload.extension:PackageQuantity">
+      <path value="Communication.payload.extension" />
+      <sliceName value="PackageQuantity" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/PackageQuanity" />
       </type>
     </element>
     <element id="Communication.payload.content[x]">
