@@ -49,5 +49,6 @@
 			<reference value="https://prescriptionserver.telematik/Task/4711"/>
 		</what>
 		<name value="X123456789"/>
+		<description value="*160.123.456.789.123.58*"/>
 	</entity>
 </AuditEvent>
