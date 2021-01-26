@@ -57,5 +57,10 @@
 			<code value="166"/>
 			<display value="Muster 16 (T-Rezepte)"/>
 		</contains>
+		<contains>
+			<system value="https://gematik.de/fhir/CodeSystem/Flowtype"/>
+			<code value="169"/>
+			<display value="Muster 16 (Direkte Zuweisung)"/>
+		</contains>
 	</expansion>
 </ValueSet>
