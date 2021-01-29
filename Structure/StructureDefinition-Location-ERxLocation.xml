@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://gematik.de/fhir/StructureDefinition/Gem_erxLocation" />
+  <url value="https://gematik.de/fhir/StructureDefinition/ErxLocation" />
   <name value="Gem_erxLocation" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />

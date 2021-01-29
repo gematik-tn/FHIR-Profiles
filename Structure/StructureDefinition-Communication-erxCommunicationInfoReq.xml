@@ -3,7 +3,7 @@
   <meta>
     <lastUpdated value="2020-04-16T13:43:30.128+00:00" />
   </meta>
-  <url value="https://gematik.de/fhir/StructureDefinition/erxCommunicationInfoReq" />
+  <url value="https://gematik.de/fhir/StructureDefinition/ErxCommunicationInfoReq" />
   <version value="1.0.0" />
   <name value="Gem_erxCommunicationInfoReq" />
   <title value="Informative request from Patient to Provider" />
