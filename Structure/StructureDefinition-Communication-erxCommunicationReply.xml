@@ -159,6 +159,9 @@
       <type>
         <code value="string" />
       </type>
+      <type>
+        <code value="Attachment" />
+      </type>
       <mustSupport value="true" />
     </element>
   </differential>
