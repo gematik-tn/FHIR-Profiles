@@ -34,6 +34,7 @@
   <differential>
     <element id="Communication.basedOn">
       <path value="Communication.basedOn" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />

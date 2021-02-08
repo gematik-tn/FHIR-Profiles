@@ -32,6 +32,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
+    <element id="Communication.basedOn">
+      <path value="Communication.basedOn" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Communication.status">
       <path value="Communication.status" />
       <fixedCode value="unknown" />
