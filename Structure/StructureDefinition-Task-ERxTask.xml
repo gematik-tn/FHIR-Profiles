@@ -115,7 +115,7 @@
     <element id="Task.identifier:AccessCode.system">
       <path value="Task.identifier.system" />
       <min value="1" />
-      <fixedUri value="https://gematik.de/fhir/Namingsystem/AccessCode" />
+      <fixedUri value="https://gematik.de/fhir/NamingSystem/AccessCode" />
     </element>
     <element id="Task.identifier:AccessCode.value">
       <path value="Task.identifier.value" />
@@ -130,7 +130,7 @@
     <element id="Task.identifier:Secret.system">
       <path value="Task.identifier.system" />
       <min value="1" />
-      <fixedUri value="https://gematik.de/fhir/Namingsystem/Secret" />
+      <fixedUri value="https://gematik.de/fhir/NamingSystem/Secret" />
     </element>
     <element id="Task.identifier:Secret.value">
       <path value="Task.identifier.value" />
@@ -221,7 +221,7 @@
     <element id="Task.input:ePrescription.type.coding.system">
       <path value="Task.input.type.coding.system" />
       <code>
-        <system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
+        <system value="https://gematik.de/fhir/CodeSystem/Documenttype" />
         <display value="Type of the Bundle" />
       </code>
       <min value="1" />
@@ -236,7 +236,7 @@
       <path value="Task.input.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxBinary" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/ErxBinary" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
@@ -261,7 +261,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://gematik.de/fhir/ValueSet/DOCUMENTTYPE" />
+        <valueSet value="https://gematik.de/fhir/CodeSystem/Documenttype" />
       </binding>
     </element>
     <element id="Task.input:patientReceipt.type.coding">
@@ -273,7 +273,7 @@
     <element id="Task.input:patientReceipt.type.coding.system">
       <path value="Task.input.type.coding.system" />
       <code>
-        <system value="https://gematik.de/fhir/CodeSystem/DOCUMENTTYPE" />
+        <system value="https://gematik.de/fhir/CodeSystem/Documenttype" />
         <display value="Type of the Bundle" />
       </code>
       <min value="1" />
@@ -306,7 +306,7 @@
     <element id="Task.output">
       <path value="Task.output" />
       <code>
-        <system value="https://gematik.de/fhir/CodeSystem/FLOWTYPE" />
+        <system value="https://gematik.de/fhir/CodeSystem/Flowtype" />
         <userSelected value="true" />
       </code>
       <slicing>
@@ -330,7 +330,7 @@
       <path value="Task.output.type" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://gematik.de/fhir/ValueSet/DOCUMENTTYPE" />
+        <valueSet value="https://gematik.de/fhir/CodeSystem/Documenttype" />
       </binding>
     </element>
     <element id="Task.output:receipt.type.coding">
@@ -353,7 +353,7 @@
       <path value="Task.output.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxReceipt" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/ErxReceipt" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>

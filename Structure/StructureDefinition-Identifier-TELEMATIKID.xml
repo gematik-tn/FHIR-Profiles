@@ -288,7 +288,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="https://gematik.de/fhir/Namingsystem/TelematikID" />
+      <fixedUri value="https://gematik.de/fhir/NamingSystem/TelematikID" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient" />
@@ -500,7 +500,7 @@
     <element id="Identifier.system">
       <path value="Identifier.system" />
       <min value="1" />
-      <fixedUri value="https://gematik.de/fhir/Namingsystem/TelematikID" />
+      <fixedUri value="https://gematik.de/fhir/NamingSystem/TelematikID" />
     </element>
     <element id="Identifier.value">
       <path value="Identifier.value" />

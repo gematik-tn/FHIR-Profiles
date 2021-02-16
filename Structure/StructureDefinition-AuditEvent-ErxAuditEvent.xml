@@ -121,10 +121,10 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxMedicationDispense" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxTask" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxAuditEvent" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxCommunication" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/ErxTask" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/ErxAuditEvent" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/ErxCommunication" />
       </type>
     </element>
     <element id="AuditEvent.entity.name">
