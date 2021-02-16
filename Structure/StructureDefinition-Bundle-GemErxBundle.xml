@@ -91,8 +91,8 @@
         <rules value="open" />
       </slicing>
       <short value="ePrescription receipt entry" />
-      <min value="1" />
-      <max value="1" />
+      <min value="2" />
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Bundle.entry:Composition">
@@ -127,7 +127,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

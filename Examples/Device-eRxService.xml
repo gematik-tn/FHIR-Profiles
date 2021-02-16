@@ -1,11 +1,11 @@
 <Device xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="https://gematik.de/fhir/StructureDefinition/erxDevice" />
+		<profile value="https://gematik.de/fhir/StructureDefinition/ErxDevice" />
 		<tag>
 			<display value="Hardcoded device instance representing the ePrescription service." />
 		</tag>
 	</meta>
-	<id value="eRxService" />
+	<id value="ErxService" />
 	<version>
 		<value value="1.0.0" /> 
 	</version>

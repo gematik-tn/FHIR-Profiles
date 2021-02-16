@@ -1,6 +1,6 @@
 <Communication xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="https://gematik.de/fhir/StructureDefinition/erxCommunicationInfoReq" />
+		<profile value="https://gematik.de/fhir/StructureDefinition/ErxCommunicationInfoReq" />
 		<tag>
 			<code value="patient-provider" />
 			<display value="Anfrage Belieferfaehigkeit" />
@@ -10,7 +10,7 @@
 		<Medication xmlns="http://hl7.org/fhir">
 			<id value="5fe6e06c-8725-46d5-aecd-e65e041ca3de" />
 				<meta>
-					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.00.000" />
+					<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.0" />
 				</meta>
 				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
 					<valueCoding>
@@ -26,7 +26,7 @@
 				</extension>
 				<code>
 					<coding>
-					<system value="https://fhir.kbv.de/NamingSystem/KBV_NS_ERP_PZN" />
+					<system value="http://fhir.de/CodeSystem/ifa/pzn" />
 					<code value="06313728" />
 				</coding>
 				<text value="Sumatriptan-1a Pharma 100 mg Tabletten" />
@@ -50,6 +50,9 @@
 			</amount>
 		</Medication>
 	</contained>
+	<basedOn>
+        <reference value="Task/4711/$accept?ac=777bea0e13cc9c42ceec14aec3ddee2263325dc2c6c699db115f58fe423607ea" />
+    </basedOn>
 	<status value="unknown" />
 	<sent value="2020-03-12T18:01:10+00:00" />
 	<about>
@@ -57,7 +60,7 @@
 	</about>
 	<recipient>
 		<identifier>
-			<system value="https://gematik.de/fhir/Namingsystem/TelematikID" />
+			<system value="https://gematik.de/fhir/NamingSystem/TelematikID" />
 			<value value="606358757" />
 		</identifier>
 	</recipient>

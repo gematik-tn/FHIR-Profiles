@@ -1,6 +1,6 @@
 <AuditEvent xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="https://gematik.de/fhir/StructureDefinition/eRxAuditEvent" />
+		<profile value="https://gematik.de/fhir/StructureDefinition/ErxAuditEvent" />
 		<tag>
 			<display value="Valid Example with minimal data." />
 		</tag>
@@ -26,7 +26,7 @@
 		</type>
 		<who>
 		  <identifier>
-            <system value="https://gematik.de/fhir/Namingsystem/TelematikID"/>
+            <system value="https://gematik.de/fhir/NamingSystem/TelematikID"/>
             <value value="606358750"/>
           </identifier>
 		</who>
@@ -43,7 +43,7 @@
 		<what>
 			<identifier>
 				<use value="official"/>
-				<system value="https://gematik.de/fhir/Namingsystem/prescriptionID"/>
+				<system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
 				<value value="160.123.456.789.123.58"/>
 			</identifier>
 			<reference value="https://prescriptionserver.telematik/Task/4711"/>
