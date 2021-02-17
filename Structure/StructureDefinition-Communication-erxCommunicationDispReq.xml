@@ -38,7 +38,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxTask" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/ErxTask" />
         <aggregation value="referenced" />
       </type>
       <mustSupport value="true" />
@@ -71,7 +71,7 @@
       <min value="1" />
       <type>
         <code value="Identifier" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/baseTelematikID" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/BaseTelematikID" />
       </type>
       <mustSupport value="true" />
     </element>

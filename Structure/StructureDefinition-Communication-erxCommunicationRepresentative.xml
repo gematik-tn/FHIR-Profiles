@@ -38,7 +38,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://gematik.de/fhir/StructureDefinition/erxTask" />
+        <targetProfile value="https://gematik.de/fhir/StructureDefinition/ErxTask" />
         <aggregation value="referenced" />
       </type>
       <mustSupport value="true" />

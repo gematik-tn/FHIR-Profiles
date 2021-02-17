@@ -52,7 +52,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/erxTask" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/ErxTask" />
       </type>
     </element>
     <element id="Parameters.parameter:erxTask.part">
@@ -78,7 +78,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/erxComposition" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/ErxComposition" />
       </type>
     </element>
     <element id="Parameters.parameter:erxBinary.part">

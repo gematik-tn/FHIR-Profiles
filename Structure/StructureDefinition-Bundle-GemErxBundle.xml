@@ -45,7 +45,7 @@
         <severity value="error" />
         <human value="All referenced Resources must be contained in the Bundle" />
         <expression value="Bundle.entry.descendants().reference.distinct().subsetOf(%context.entry.fullUrl)" />
-        <source value="https://gematik.de/fhir/StructureDefinition/erxReceipt" />
+        <source value="https://gematik.de/fhir/StructureDefinition/ErxReceipt" />
       </constraint>
     </element>
     <element id="Bundle.identifier">
@@ -67,7 +67,7 @@
       <min value="1" />
       <type>
         <code value="Identifier" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/erxPrescriptionID" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/ErxPrescriptionID" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -106,7 +106,7 @@
       <path value="Bundle.entry.resource" />
       <type>
         <code value="Resource" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/erxComposition" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/ErxComposition" />
       </type>
     </element>
     <element id="Bundle.signature">
@@ -114,7 +114,7 @@
       <min value="1" />
       <type>
         <code value="Signature" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/erxSignature" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/ErxSignature" />
       </type>
       <mustSupport value="true" />
     </element>

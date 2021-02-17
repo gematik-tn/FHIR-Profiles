@@ -55,7 +55,7 @@
       <max value="1" />
       <type>
         <code value="Identifier" />
-        <profile value="https://gematik.de/fhir/StructureDefinition/baseTelematikID" />
+        <profile value="https://gematik.de/fhir/StructureDefinition/BaseTelematikID" />
       </type>
       <mustSupport value="true" />
     </element>
