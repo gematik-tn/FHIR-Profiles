@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "url": "http://gematik.de/fhir/OperationDefinition/AbortOperationDefinition",
-  "version": "V1.0",
+  "version": "1.0.1",
   "name": "Abort Operation",
   "status": "draft",
   "kind": "operation",

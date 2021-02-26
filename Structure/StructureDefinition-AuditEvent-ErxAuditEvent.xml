@@ -9,7 +9,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">Beschreibung des Inhalts des Zugriffsprotokolleintrags in einfacher Sprache</div>
   </text>
   <url value="https://gematik.de/fhir/StructureDefinition/ErxAuditEvent" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="Gem_erxAuditEvent" />
   <title value="AuditEvent for Logging of ePrescription Access" />
   <status value="draft" />

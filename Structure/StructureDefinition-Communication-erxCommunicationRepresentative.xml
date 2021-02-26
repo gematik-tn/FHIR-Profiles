@@ -4,7 +4,7 @@
     <lastUpdated value="2020-04-16T13:43:30.128+00:00" />
   </meta>
   <url value="https://gematik.de/fhir/StructureDefinition/ErxCommunicationRepresentative" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="Gem_erxCommunicationRepresentative" />
   <title value="Communication between Patient and Representative" />
   <status value="draft" />

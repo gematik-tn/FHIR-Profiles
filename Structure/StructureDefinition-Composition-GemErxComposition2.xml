@@ -4,6 +4,7 @@
     <lastUpdated value="2020-04-16T13:43:58.4+00:00" />
   </meta>
   <url value="https://gematik.de/fhir/StructureDefinition/ErxComposition" />
+  <version value="1.0.1" />
   <name value="Gem_erxComposition" />
   <title value="Receipt for Fulfillment of ePrescription" />
   <status value="draft" />

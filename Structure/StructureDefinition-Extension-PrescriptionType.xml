@@ -5,7 +5,7 @@
     <lastUpdated value="2020-04-16T14:48:56.829+00:00" />
   </meta>
   <url value="https://gematik.de/fhir/StructureDefinition/PrescriptionType" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="PrescriptionType" />
   <status value="draft" />
   <date value="2020-04-16T14:48:54.0746171+00:00" />

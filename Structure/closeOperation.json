@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "url": "http://gematik.de/fhir/OperationDefinition/CloseOperationDefinition",
-  "version": "V1.0",
+  "version": "1.0.1",
   "name": "Close Operation",
   "status": "draft",
   "kind": "operation",

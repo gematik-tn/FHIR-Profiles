@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://gematik.de/fhir/StructureDefinition/BaseTelematikID" />
+  <version value="1.0.1" />
   <name value="Gem_baseTelematikID" />
   <title value="Identifier Profile for Telematik ID" />
   <status value="draft" />

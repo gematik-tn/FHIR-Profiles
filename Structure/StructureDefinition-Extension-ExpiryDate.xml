@@ -5,7 +5,7 @@
     <lastUpdated value="2020-04-16T13:47:34.04+00:00" />
   </meta>
   <url value="https://gematik.de/fhir/StructureDefinition/ExpiryDate" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="ExpiryDate" />
   <title value="Presciption expiry date" />
   <status value="draft" />
