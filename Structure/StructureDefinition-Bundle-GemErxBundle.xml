@@ -65,6 +65,7 @@
       <path value="Bundle.identifier" />
       <sliceName value="PrescriptionID" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Identifier" />
         <profile value="https://gematik.de/fhir/StructureDefinition/ErxPrescriptionID" />
