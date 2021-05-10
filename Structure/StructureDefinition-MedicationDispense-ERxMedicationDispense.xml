@@ -45,21 +45,7 @@
   <differential>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <short value="ePrescription identifier" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationDispense.identifier:PrescriptionID">
-      <path value="MedicationDispense.identifier" />
-      <sliceName value="PrescriptionID" />
       <min value="1" />
       <max value="1" />
       <type>
