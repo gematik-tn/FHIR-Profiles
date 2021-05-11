@@ -15,6 +15,7 @@
 		<fullUrl value="https://prescriptionserver.telematik/Composition/example" />
 		<resource>
 			<Composition>
+				<id value="wdasf14235-sfse3234" />
 				<meta>
 					<profile value="https://gematik.de/fhir/StructureDefinition/ErxComposition" />
 				</meta>
