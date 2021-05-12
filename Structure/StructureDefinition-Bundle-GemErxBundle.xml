@@ -105,5 +105,15 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Bundle.signature.type">
+      <path value="Bundle.signature.type" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
   </differential>
 </StructureDefinition>
