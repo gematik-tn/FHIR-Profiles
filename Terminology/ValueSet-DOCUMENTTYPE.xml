@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<url value="https://gematik.de/fhir/ValueSet/Documenttype" />
-	<version value="1.0.1" />
+	<version value="1.0.3" />
 	<name value="DocumenttypeVS" />
 	<title value="ValueSet of Documenttype Codes"/>
 	<status value="draft" />

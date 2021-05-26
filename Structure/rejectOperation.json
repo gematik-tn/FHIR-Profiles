@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "url": "http://gematik.de/fhir/OperationDefinition/RejectOperationDefinition",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "name": "Reject Operation",
   "status": "draft",
   "kind": "operation",

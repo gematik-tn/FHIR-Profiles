@@ -5,7 +5,7 @@
     <lastUpdated value="2020-04-16T13:44:27.957+00:00" />
   </meta>
   <url value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense" />
-  <version value="1.0.1" />
+  <version value="1.0.3" />
   <name value="Gem_erxMedicationDispense" />
   <title value="Dispensation of the Prescription" />
   <status value="draft" />
@@ -96,17 +96,6 @@
     </element>
     <element id="MedicationDispense.performer.actor.identifier">
       <path value="MedicationDispense.performer.actor.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationDispense.performer.actor.identifier:TelematikID">
-      <path value="MedicationDispense.performer.actor.identifier" />
-      <sliceName value="TelematikID" />
       <min value="1" />
       <type>
         <code value="Identifier" />

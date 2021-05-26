@@ -5,7 +5,7 @@
     <lastUpdated value="2020-04-16T13:42:23.761+00:00" />
   </meta>
   <url value="https://gematik.de/fhir/StructureDefinition/ErxReceipt" />
-  <version value="1.0.2" />
+  <version value="1.0.3" />
   <name value="Gem_erxReceipt" />
   <title value="Document Bundle for Receipt" />
   <status value="draft" />

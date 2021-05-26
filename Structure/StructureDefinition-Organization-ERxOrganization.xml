@@ -5,7 +5,7 @@
     <lastUpdated value="2020-04-17T13:48:59.607+00:00" />
   </meta>
   <url value="https://gematik.de/fhir/StructureDefinition/ErxOrganization" />
-  <version value="1.0.1" />
+  <version value="1.0.3" />
   <name value="Gem_erxOrganization" />
   <title value="Organization providing ePrescription Services" />
   <status value="draft" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://gematik.de/fhir/StructureDefinition/BeneficiaryExtension" />
-  <version value="1.0.1" />
+  <version value="1.0.3" />
   <name value="BeneficiaryExtension" />
   <status value="draft" />
   <description value="The beneficiary (e.g. pharmacy) of the erx-receipt that is created when the ePrescription-workflow finishes" />

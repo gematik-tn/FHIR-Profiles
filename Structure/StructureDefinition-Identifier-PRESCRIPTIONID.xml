@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://gematik.de/fhir/StructureDefinition/ErxPrescriptionID" />
-  <version value="1.0.1" />
+  <version value="1.0.3" />
   <name value="Gem_erxPrescriptionID" />
   <title value="Identifier Profile for Prescription IDs" />
   <status value="draft" />

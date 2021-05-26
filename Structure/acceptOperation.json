@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "url": "http://gematik.de/fhir/OperationDefinition/AcceptOperationDefinition",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "name": "Accept Operation",
   "status": "draft",
   "kind": "operation",
